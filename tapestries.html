@@ -83,10 +83,29 @@
             margin: 20px 0;
         }
 
-        /* Optional: Ensure images are displayed as blocks */
-        a img {
+        /* Gallery styling */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between images */
+            margin-top: 20px;
+        }
+
+        .gallery a {
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 10px; /* Rounded corners for a polished look */
+        }
+
+        .gallery img {
             display: block;
-            margin: 10px auto;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -101,17 +120,17 @@
             <li><a href="tapestry1.html">Tapestries</a></li>
         </ul>
     </nav>
-.gallery img:hover {
-      transform: scale(1.05);
-    }
-    <!-- Fixed Image Links -->
-    <a href="tapestry1.html">
-        <img src="tapestry1.jpg" alt="Tapestry 1" width="300">
-    </a>
 
-    <a href="tapestry2.html">
-        <img src="tapestry2.jpg" alt="Tapestry 2" width="300">
-    </a>
+    <!-- Gallery with hover effect -->
+    <div class="gallery">
+        <a href="tapestry1.html">
+            <img src="tapestry1.jpg" alt="Tapestry 1">
+        </a>
+
+        <a href="tapestry2.html">
+            <img src="tapestry2.jpg" alt="Tapestry 2">
+        </a>
+    </div>
 
     <main>
         <section id="about">
@@ -126,4 +145,3 @@
     </main>
 </body>
 </html>
-
