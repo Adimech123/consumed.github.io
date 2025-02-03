@@ -116,18 +116,43 @@
         <img src="tapestry1.jpg" alt="Tapestry 1" width="300">
     </a>
 
-    <main>
+
+    <!-- Audio element -->
+    <audio id="audio" loop>
+        <source src="music2.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+ <main>
         <section id="about">
             <h2>About the Exhibition</h2>
             <p>This tapestry tells the story of a person nearly forgotten by history as a victim of 9/11.</p>
         </section>
 
+      </main>
+
         <section id="projects">
             <h2>Creator</h2>
             <p>Amelie Dimech</p>
         </section>
-    </main>
+
+    
+    <script>
+        // Get the image and audio elements
+        const tapestryImage = document.getElementById('tapestryImage');
+        const audio = document.getElementById('audio');
+
+        // Add a click event listener to the image
+        tapestryImage.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play(); // Play audio when the image is clicked
+            } else {
+                audio.pause(); // Pause audio when the image is clicked again
+                audio.currentTime = 0; // Reset the audio to the beginning
+            }
+        });
+    </script>
 </body>
 </html>
 
-
+ 
