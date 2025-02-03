@@ -52,7 +52,7 @@
             color: #a8200d;
             text-decoration: none;
             font-family: "Courier New", monospace;
-            letter-spacing: 2px; /* Increases space between letters */
+            letter-spacing: 2px;
         }
 
         nav ul li a:hover {
@@ -83,10 +83,18 @@
             margin: 20px 0;
         }
 
-        /* Optional: Ensure images are displayed as blocks */
-        a img {
+        /* Style for images and hover effect */
+        img {
             display: block;
             margin: 10px auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -102,13 +110,15 @@
         </ul>
     </nav>
 
- 
+    <!-- Image with hover effect -->
+    <a href="tapestry2.html">
         <img src="tapestry2.jpg" alt="Tapestry 2" width="300">
-   
+    </a>
+
     <main>
         <section id="about">
             <h2>About the Exhibition</h2>
-            <p>This tapestry tells the story of a person and an argument that started the process of their parents divorce.</p>
+            <p>This tapestry tells the story of a person and an argument that started the process of their parents' divorce.</p>
         </section>
 
         <section id="projects">
