@@ -71,7 +71,15 @@
             color: #d26d54;
         }
 
-        section p {
+                section p1 {
+            font-size: 0.8em;
+            line-height: 1.6;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section p2 {
             font-size: 1.2em;
             line-height: 1.6;
             text-align: center;
@@ -112,10 +120,7 @@
     </nav>
 
     <!-- Image with hover effect -->
-    <a href="tapestry1.html">
-        <img src="tapestry1.jpg" alt="Tapestry 1" width="300">
-    </a>
-
+    <img id="tapestryImage" src="tapestry1.jpg" alt="Tapestry 1" width="300">
 
     <!-- Audio element -->
     <audio id="audio" loop>
@@ -123,20 +128,19 @@
         Your browser does not support the audio element.
     </audio>
 
- <main>
+    <main>
+        <p1>CLICK ON THE IMAGE FOR AUDIO</p>
         <section id="about">
             <h2>About the Exhibition</h2>
-            <p>This tapestry tells the story of a person nearly forgotten by history as a victim of 9/11.</p>
+            <p2>This tapestry tells the story of a person nearly forgotten by history as a victim of 9/11.</p2>
         </section>
-
-      </main>
 
         <section id="projects">
             <h2>Creator</h2>
             <p>Amelie Dimech</p>
         </section>
+    </main>
 
-    
     <script>
         // Get the image and audio elements
         const tapestryImage = document.getElementById('tapestryImage');
@@ -154,5 +158,3 @@
     </script>
 </body>
 </html>
-
- 
