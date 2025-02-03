@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
     <style>
+        @font-face {
+            font-family: 'Mauline';
+            src: url('https://raw.githubusercontent.com/Adimech123/consumed.github.io/main/fonts/Mauline.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            font-family: "Mauline.otf";
+            font-family: "Mauline", sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center; /* Centers all text inside the body */
-            top: 0;
-            left: 0;
+            text-align: center;
             width: 100%;
             height: 100%;
             background: url("Squiggle.png") no-repeat top center;
-            background-size: cover; /* Scales the image to fit */
+            background-size: cover;
             background-position: center -10%;
             background-color: #fffdf7;
         }
 
         header h1 {
-            font-family: "Mauline"; /* Set header font to Georgia */
+            font-family: "Mauline";
             margin: 30px 0;
             letter-spacing: 1px;
             color: #a8200d; 
@@ -54,21 +59,18 @@
             padding: 40px;
             width: 70%;
             margin: 0 auto;
-            position: relative; /* Make section position relative to position the image inside */
         }
         section h2 {
             font-family: "Courier New", monospace;
             margin-bottom: 20px;
-            color: #d26d54; /* Color for section headers */
+            color: #d26d54;
         }
         section p {
             font-size: 1.2em;
             line-height: 1.6;
-            text-align: center; /* Centers the text within paragraphs */
+            text-align: center;
             max-width: 800px;
             margin: 0 auto;
-            position: relative; /* Ensures text is above the background image */
-            z-index: 2; /* Places text above the image */
         }
 
         footer {
@@ -78,10 +80,9 @@
 </head>
 <body>
     <header>
-        <h1>Degree Exhibition</h1> <!-- Header text -->
+        <h1>Degree Exhibition</h1>
     </header>
 
-    <!-- Navigation bar -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -91,7 +92,6 @@
         </ul>
     </nav>
 
-    <!-- Page content -->
     <main>
         <section id="about">
             <h2>About the Exhibition</h2>
