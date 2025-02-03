@@ -111,9 +111,13 @@
     </nav>
 
     <!-- Image with hover effect -->
-    <a href="tapestry2.html">
-        <img src="tapestry2.jpg" alt="Tapestry 2" width="300">
-    </a>
+    <img id="tapestryImage" src="tapestry2.jpg" alt="Tapestry 2" width="300">
+
+    <!-- Audio element -->
+    <audio id="audio" loop>
+        <source src="music1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
 
     <main>
         <section id="about">
@@ -126,5 +130,21 @@
             <p>Amelie Dimech</p>
         </section>
     </main>
+
+    <script>
+        // Get the image and audio elements
+        const tapestryImage = document.tapestry2.html('tapestryImage');
+        const audio = document.music1.mp3('audio');
+
+        // Add a click event listener to the image
+        tapestryImage.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play(); // Play audio when the image is clicked
+            } else {
+                audio.pause(); // Pause audio when the image is clicked again
+                audio.currentTime = 0; // Reset the audio to the beginning
+            }
+        });
+    </script>
 </body>
 </html>
