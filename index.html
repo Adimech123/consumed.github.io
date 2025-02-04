@@ -38,23 +38,30 @@
             padding: 10px;
             font-size: 16px;
         }
- nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 60px; 
-}
 
-nav ul li a {
-    color: #a8200d;
-    text-decoration: none;
-    font-family: "Courier New", monospace;
-    letter-spacing: 2px; /* Increases space between letters */
-}
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 60px; 
+        }
+
+        nav ul li a {
+            color: #a8200d;
+            text-decoration: none;
+            font-family: "Courier New", monospace;
+            letter-spacing: 2px; /* Increases space between letters */
+        }
+
         nav ul li a:hover {
             text-decoration: underline;
+        }
+
+        /* Make the Home button bold */
+        nav ul li a[href="index.html"] {
+            font-weight: bold;
         }
 
         section {
@@ -62,11 +69,13 @@ nav ul li a {
             width: 70%;
             margin: 0 auto;
         }
+
         section h2 {
             font-family: "Aptos Display", bold;
             margin-bottom: 20px;
             color: #d26d54;
         }
+
         section p {
             font-size: 1.2em;
             line-height: 1.6;
