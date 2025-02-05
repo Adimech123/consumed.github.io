@@ -99,7 +99,8 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        img:hover {
+        /* Hover effect while playing */
+        .hover-effect {
             transform: scale(1.1);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
@@ -129,7 +130,7 @@
         </ul>
     </nav>
 
-    <!-- Image with hover effect -->
+    <!-- Image with effect -->
     <img id="tapestryImage" src="exp1.jpg" alt="Tapestry 1">
 
     <!-- Audio element -->
@@ -161,10 +162,17 @@
         tapestryImage.addEventListener('click', () => {
             if (audio.paused) {
                 audio.play(); // Play audio when the image is clicked
+                tapestryImage.classList.add('hover-effect'); // Add hover effect
             } else {
                 audio.pause(); // Pause audio when the image is clicked again
                 audio.currentTime = 0; // Reset the audio to the beginning
+                tapestryImage.classList.remove('hover-effect'); // Remove hover effect
             }
+        });
+
+        // Remove hover effect when audio ends
+        audio.addEventListener('pause', () => {
+            tapestryImage.classList.remove('hover-effect');
         });
     </script>
 </body>
