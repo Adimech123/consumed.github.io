@@ -46,7 +46,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            justify-content: center; /* Center navbar items */
             flex-wrap: wrap; /* Allows wrapping on small screens */
             gap: 20px;
         }
@@ -91,11 +91,12 @@
             margin: 20px 0;
         }
 
-        /* Gallery Styling */
+        /* Centered Gallery Styling */
         .gallery {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: center; /* Center images horizontally */
+            align-items: center; /* Center images vertically */
             gap: 15px;
             margin-top: 20px;
         }
@@ -109,7 +110,7 @@
         .gallery img {
             display: block;
             width: 100%;
-            max-width: 250px; /* Slightly smaller images */
+            max-width: 200px; /* Smaller images */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -141,7 +142,7 @@
         </ul>
     </nav>
 
-    <!-- Responsive Gallery -->
+    <!-- Centered Gallery -->
     <div class="gallery">
         <a href="tapestry1.html">
             <img src="exp1.jpg" alt="Tapestry 1">
