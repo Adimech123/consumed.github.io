@@ -1,0 +1,89 @@
+
+        
+        @font-face {
+            font-family: 'Mauline';
+            src: url('https://raw.githubusercontent.com/Adimech123/consumed.github.io/main/fonts/Mauline.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: "Courier", sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            background: url("Squiggle.png") no-repeat center center;
+            background-size: cover;
+            background-color: #fffdf7;
+        }
+
+        header h1 {
+            font-family: "Mauline";
+            font-size: 10vw; /* Responsive title */
+            margin: 5vh 0;
+            letter-spacing: 1px;
+            color: #a8200d; 
+        }
+
+        nav {
+            background-color: #fffdf7;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Stacks on small screens */
+            align-items: center;
+            gap: 10px;
+        }
+
+        @media (min-width: 600px) {
+            nav ul {
+                flex-direction: row; /* Horizontal on larger screens */
+                justify-content: center;
+                gap: 40px;
+            }
+        }
+
+        nav ul li {
+            margin: 5px 0;
+        }
+
+        nav ul li a {
+            color: #a8200d;
+            text-decoration: none;
+            font-family: "Courier New", monospace;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Make only the active page (Home) bold */
+        nav ul li a.active {
+            font-weight: bold;
+        }
+
+        section {
+            padding: 5vw;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            color: #d26d54;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin: 20px 0;
+        }
