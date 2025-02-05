@@ -17,8 +17,6 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            width: 100%;
-            height: 100%;
             background: url("Squiggle.png") no-repeat top center;
             background-size: cover;
             background-position: center -10%;
@@ -27,16 +25,15 @@
 
         header h1 {
             font-family: "Mauline";
-            font-size: 80px;
-            margin: 30px 0;
+            font-size: 10vw; /* Scales based on screen width */
+            margin: 20px 0;
             letter-spacing: 1px;
-            color: #a8200d; 
+            color: #a8200d;
         }
 
         nav {
             background-color: #fffdf7;
             padding: 10px;
-            font-size: 16px;
         }
 
         nav ul {
@@ -44,14 +41,20 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
-            gap: 60px; 
+            flex-direction: column; /* Stack links on small screens */
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav ul li {
+            display: block;
         }
 
         nav ul li a {
             color: #a8200d;
             text-decoration: none;
             font-family: "Courier New", monospace;
+            font-size: 16px;
             letter-spacing: 2px;
         }
 
@@ -60,27 +63,21 @@
         }
 
         section {
-            padding: 40px;
-            width: 70%;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
             margin: 0 auto;
         }
 
         section h2 {
             font-family: "Aptos Display", bold;
-            margin-bottom: 20px;
+            font-size: 1.8em;
+            margin-bottom: 15px;
             color: #d26d54;
         }
 
-                section p1 {
-            font-size: 0.8em;
-            line-height: 1.6;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        section p2 {
-            font-size: 1.2em;
+        p {
+            font-size: 1em;
             line-height: 1.6;
             text-align: center;
             max-width: 800px;
@@ -91,10 +88,12 @@
             margin: 20px 0;
         }
 
-        /* Style for images and hover effect */
+        /* Responsive Images */
         img {
             display: block;
-            margin: 10px auto;
+            width: 90%;
+            max-width: 300px;
+            margin: 20px auto;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -103,6 +102,17 @@
         img:hover {
             transform: scale(1.1);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (min-width: 768px) {
+            nav ul {
+                flex-direction: row; /* Return to horizontal layout on larger screens */
+                gap: 60px;
+            }
+
+            section {
+                width: 70%;
+            }
         }
     </style>
 </head>
@@ -120,7 +130,7 @@
     </nav>
 
     <!-- Image with hover effect -->
-    <img id="tapestryImage" src="exp1.jpg" alt="Tapestry 1" width="300">
+    <img id="tapestryImage" src="exp1.jpg" alt="Tapestry 1">
 
     <!-- Audio element -->
     <audio id="audio" loop>
@@ -129,10 +139,11 @@
     </audio>
 
     <main>
-        <p1>CLICK ON THE IMAGE FOR AUDIO</p>
+        <p>CLICK ON THE IMAGE FOR AUDIO</p>
+
         <section id="about">
             <h2>About the Exhibition</h2>
-            <p2>This tapestry tells the story of a person nearly forgotten by history as a victim of 9/11.</p2>
+            <p>This tapestry tells the story of a person nearly forgotten by history as a victim of 9/11.</p>
         </section>
 
         <section id="projects">
