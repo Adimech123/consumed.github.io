@@ -66,12 +66,11 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Highlighted menu item */
-nav ul li a[href="index.html"] 
+/* Highlighted menu items */
+nav ul li a[href="index.html"],
 nav ul li a[href="project2.html"] {
     font-weight: bold;
 }
-
 
 section {
     padding: 5vw;
