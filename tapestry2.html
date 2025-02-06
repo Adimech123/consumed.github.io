@@ -3,119 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
-    <style>
-        @font-face {
-            font-family: 'Mauline';
-            src: url('https://raw.githubusercontent.com/Adimech123/consumed.github.io/main/fonts/Mauline.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        body {
-            font-family: "Courier", sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background: url("Squiggle.png") no-repeat top center;
-            background-size: cover;
-            background-position: center -10%;
-            background-color: #fffdf7;
-        }
-
-        header h1 {
-            font-family: "Mauline";
-            font-size: 10vw; /* Scales based on screen width */
-            margin: 20px 0;
-            letter-spacing: 1px;
-            color: #a8200d;
-        }
-
-        nav {
-            background-color: #fffdf7;
-            padding: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column; /* Stack links on small screens */
-            align-items: center;
-            gap: 10px;
-        }
-
-        nav ul li {
-            display: block;
-        }
-
-        nav ul li a {
-            color: #a8200d;
-            text-decoration: none;
-            font-family: "Courier New", monospace;
-            font-size: 16px;
-            letter-spacing: 2px;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 20px;
-            width: 90%;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        section h2 {
-            font-family: "Aptos Display", bold;
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            color: #d26d54;
-        }
-
-        p {
-            font-size: 1em;
-            line-height: 1.6;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        footer {
-            margin: 20px 0;
-        }
-
-        /* Responsive Images */
-        img {
-            display: block;
-            width: 90%;
-            max-width: 300px;
-            margin: 20px auto;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Hover effect while playing */
-        .hover-effect {
-            transform: scale(1.1);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        @media (min-width: 768px) {
-            nav ul {
-                flex-direction: row; /* Return to horizontal layout on larger screens */
-                gap: 60px;
-            }
-
-            section {
-                width: 70%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="tapestry.css"> <!-- Link to external CSS -->
+    <script defer src="script.js"></script> <!-- Link to external JS -->
 </head>
 <body>
     <header>
@@ -152,29 +41,6 @@
             <p>Amelie Dimech</p>
         </section>
     </main>
-
-    <script>
-        // Get the image and audio elements
-        const tapestryImage = document.getElementById('tapestryImage');
-        const audio = document.getElementById('audio');
-
-        // Add a click event listener to the image
-        tapestryImage.addEventListener('click', () => {
-            if (audio.paused) {
-                audio.play(); // Play audio when the image is clicked
-                tapestryImage.classList.add('hover-effect'); // Add hover effect
-            } else {
-                audio.pause(); // Pause audio when the image is clicked again
-                audio.currentTime = 0; // Reset the audio to the beginning
-                tapestryImage.classList.remove('hover-effect'); // Remove hover effect
-            }
-        });
-
-        // Remove hover effect when audio ends
-        audio.addEventListener('pause', () => {
-            tapestryImage.classList.remove('hover-effect');
-        });
-    </script>
 </body>
 </html>
 
