@@ -37,6 +37,15 @@ nav ul {
     flex-direction: column; /* Stack links on small screens */
     align-items: center;
     gap: 10px;
+    justify-content: center; /* Centers items horizontally */
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Return to horizontal layout on larger screens */
+        gap: 60px;
+        justify-content: center; /* Ensure it stays centered on larger screens */
+    }
 }
 
 nav ul li {
@@ -102,9 +111,11 @@ img {
     nav ul {
         flex-direction: row; /* Return to horizontal layout on larger screens */
         gap: 60px;
+        justify-content: center; /* Keep it centered */
     }
 
     section {
         width: 70%;
     }
 }
+
