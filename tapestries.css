@@ -21,13 +21,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers all content horizontally */
+    justify-content: space-between; /* Ensures space between header, content, and footer */
 }
 
 /* Header */
 header {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centers header content */
 }
 
 header h1 {
@@ -44,7 +45,7 @@ nav {
     background-color: #fffdf7;
     padding: 10px 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centers navbar items */
 }
 
 nav ul {
@@ -52,10 +53,9 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center navbar items */
+    justify-content: center; /* Ensures navbar items are centered */
     flex-wrap: wrap; /* Allows wrapping on small screens */
     gap: 20px;
-    padding: 0;
 }
 
 nav ul li {
@@ -84,7 +84,7 @@ section {
     padding: 40px 10px;
     width: 90%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centers section */
     text-align: center;
 }
 
@@ -111,8 +111,8 @@ footer {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center images horizontally */
-    align-items: center; /* Center images vertically */
+    justify-content: center; /* Centers images horizontally */
+    align-items: center; /* Centers images vertically */
     gap: 15px;
     margin-top: 20px;
 }
