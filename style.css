@@ -16,7 +16,7 @@ body {
     height: 100%;
     background: url("Squiggle.png") no-repeat center center;
     background-size: cover;
-    background-color: #fffdf7;
+    background-color: #f5f3ed;
 }
 
 /* Header */
@@ -36,7 +36,7 @@ header h1 {
 
 /* Navbar */
 nav {
-    background-color: #fffdf7;
+    background-color: #f5f3ed;
     padding: 10px;
     font-size: 16px;
 }
