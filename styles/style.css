@@ -89,7 +89,7 @@ section p {
     line-height: 1.6;
 }
 .hero {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbzf_WZYRJ55EOW3v_7lgJ5NtT5PT2w3n6UA&s); /* Replace with your actual image path */
+    background-image: url('https://cxl.com/wp-content/uploads/2016/05/hero-image.jpeg'); /* Replace with your actual image path */
     background-size: cover;
     background-position: center;
     height: 300px; /* Adjust height as needed */
