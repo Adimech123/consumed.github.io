@@ -88,24 +88,7 @@ section p {
     font-size: 1rem;
     line-height: 1.6;
 }
-.hero {
-    background-image: url('https://cxl.com/wp-content/uploads/2016/05/hero-image.jpeg'); /* Replace with your actual image path */
-    background-size: cover;
-    background-position: center;
-    height: 300px; /* Adjust height as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
 
-.hero h1 {
-    font-size: 3rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Slight background tint for readability */
-    padding: 10px 20px;
-    border-radius: 5px;
-}
 
 
 footer {
