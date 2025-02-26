@@ -94,36 +94,3 @@ section p {
 footer {
     margin: 20px 0;
 }
-
-
-/* Align header and nav side by side */
-.header-container {
-    display: flex;
-    justify-content: space-between; /* Spreads elements apart */
-    align-items: center; /* Aligns items vertically */
-    padding: 20px;
-    background-color: #a8200d;
- 
-}
-
-/* Remove default list styles and display nav inline */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-/* Style navbar items */
-nav ul li {
-    margin-left: 20px; /* Adjust spacing */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-}
-
-
