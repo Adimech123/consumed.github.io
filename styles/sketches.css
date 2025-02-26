@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Mauline';
-    src: url('https://raw.githubusercontent.com/Adimech123/consumed.github.io/main/fonts/Mauline.woff2') format('woff2');
+    src: url('../assets/fonts/Mauline.woff2') format('woff2'),
+         url('../assets/fonts/Mauline.woff') format('woff'),
+         url('../assets/fonts/Mauline.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
