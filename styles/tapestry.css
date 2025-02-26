@@ -95,6 +95,12 @@ img {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
+img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 /* Hover effect while playing */
 .hover-effect {
     transform: scale(1.1);

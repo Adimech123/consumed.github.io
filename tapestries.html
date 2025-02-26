@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/tapestries.css"> <!-- Link to external CSS -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/tapestries.css" />
+    <!-- Link to external CSS -->
+    <script src="./scripts/tapestryHover.js"></script>
+  </head>
+  <body>
     <header>
-        <h1>Consumed</h1>
+      <h1>Consumed</h1>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tapestries.html">Tapestries</a></li>
-            <li><a href="sketches.html">Creations</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tapestries.html">Tapestries</a></li>
+        <li><a href="sketches.html">Creations</a></li>
+      </ul>
     </nav>
 
     <!-- Centered Gallery -->
     <div class="gallery">
-        <a href="tapestry1.html">
-            <img src="assets/images/exp1.jpg" alt="Tapestry 1">
-        </a>
+      <div>
+        <div
+          id="tapestry1"
+          class="tapestryContainer"
+          onmouseover="displayContent(this)"
+          onmouseleave="hideContent(this)"
+        >
+          <div class="contentContainer" style="opacity: 0;">
+            <h1>Xhin tiddeciedi</h1>
+            <h2>Itfa hawn</h2>
+            <a href="tapestry1.html"><button>Visit Tapestry</button></a>
+          </div>
+        </div>
+    </div>
 
-        <a href="tapestry2.html">
-            <img src="assets/images/exp2.jpg" alt="Tapestry 2">
-        </a>
+      <div>
+        <div
+          id="tapestry2"
+          class="tapestryContainer"
+          onmouseover="displayContent(this)"
+          onmouseleave="hideContent(this)"
+        >
+          <div class="contentContainer" style="opacity: 0;">
+            <h1>Xhin tiddeciedi</h1>
+            <h2>Itfa hawn</h2>
+            <a href="tapestry2.html"><button>Visit Tapestry</button></a>
+          </div>
+        </div>
+    </div>
     </div>
 
     <main>
-        <section id="about">
-            <h2>The Consumed Tapestries</h2>
-            <p>Click on the tapestry to learn more and continue the immersive experience.</p>
-        </section>
+      <section id="about">
+        <h2>The Consumed Tapestries</h2>
+        <p>
+          Click on the tapestry to learn more and continue the immersive
+          experience.
+        </p>
+      </section>
 
-        <section id="projects">
-            <h2>Creator</h2>
-            <p>Amelie Dimech</p>
-        </section>
+      <section id="projects">
+        <h2>Creator</h2>
+        <p>Amelie Dimech</p>
+      </section>
     </main>
-</body>
+  </body>
 </html>
