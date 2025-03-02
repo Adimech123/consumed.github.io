@@ -37,6 +37,7 @@ header h1 {
     margin: 30px 0;
     letter-spacing: 1px;
     color: #a8200d; 
+    text-decoration: none;
 }
 
 /* Navbar */
