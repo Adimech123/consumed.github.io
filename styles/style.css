@@ -85,8 +85,10 @@ nav ul li a[href="project2.html"] {
     transform: translate(-50%, -50%);
     color: white;
     font-family: 'Mauline', sans-serif;
-    font-size: clamp(1.5rem, 6vw, 4rem); /* Reduced size */
-    letter-spacing: 0.5px; /* Slightly tighter spacing */
+    font-size: 10vw; /* Responsive font size */
+    letter-spacing: 1px; 
+
+    
 }
 
 
