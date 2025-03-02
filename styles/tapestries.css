@@ -1,4 +1,4 @@
-@font-face {
+fix this code: @font-face {
     font-family: 'Mauline';
     src: url('../assets/fonts/Mauline.woff2') format('woff2'),
          url('../assets/fonts/Mauline.woff') format('woff'),
@@ -14,7 +14,7 @@ body {
     text-align: center;
     width: 100%;
     min-height: 100vh; /* Ensures full viewport height */
-    background: url("../assets/images/Squiggle.png") no-repeat top center;
+    background: url("Squiggle.png") no-repeat top center;
     background-size: cover;
     background-position: center -10%;
     background-color: #f5f3ed;
@@ -29,16 +29,17 @@ header {
     width: 100%;
     display: flex;
     justify-content: center; /* Centers header content */
-}
 
-header a {
+    header a {
     text-decoration: none; /* Removes underline */
     color: inherit; /* Keeps the default text color */
 }
 
+}
+
 header h1 {
     font-family: "Mauline", "Courier", sans-serif; /* Fallback font */
-    font-size: 10vw; /* Responsive font size */
+    font-size: 10vw;; /* Responsive font size */
     margin: 30px 0;
     letter-spacing: 1px;
     color: #a8200d; 
@@ -95,8 +96,7 @@ section {
 }
 
 section h2 {
-    font-family: "Aptos Display", sans-serif;
-    font-weight: bold;
+    font-family: "Aptos Display", bold;
     margin-bottom: 20px;
     color: #a8200d;
     font-size: clamp(24px, 4vw, 32px);
@@ -124,24 +124,25 @@ footer {
     margin-top: 20px;
 }
 
-#tapestry1 {
+#tapestry1{
     background-image: url("../assets/images/exp1.jpg");
 }
 
-#tapestry2 {
+#tapestry2{
     background-image: url("../assets/images/exp2.jpg");
 }
 
-.tapestryContainer {
-    width: 60vw;
-    height: 50vh;
-    background-size: cover;
+.tapestryContainer{
+    width: 100%;
+    height: 100%;
+    background-size:cover;
     background-repeat: no-repeat;
     border-radius: 15px;
     color: #a8200d;
 }
 
 .gallery > div {
+    display: inline-block;
     overflow: hidden;
     border-radius: 15px; /* Ensures rounded corners */
     width: 60vw;
@@ -162,47 +163,40 @@ footer {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.contentContainer {
+.contentContainer{
     width: 100%;
     height: 100%;
-    opacity: 0.8; /* Adjusted opacity for better readability */
+    opacity: 0.2;
     border-radius: 15px;
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .contentContainer h1,
-.contentContainer h2 {
+.contentContainer h2{
     width: 100%;
-    margin: 10px 0;
+    margin: auto;
 }
 
-.contentContainer button {
+.contentContainer button{
     width: 75%;
     height: 40px;
     background-color: #a8200d;
     color: white;
+    margin: auto;
     border-radius: 15px;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
-.contentContainer button:hover {
-    background-color: #8e180b;
-}
-
-/* Desktop Styles */
+/* Deaktop Styles */
 @media (min-width: 1024px) {
     .gallery {
         display: flex;
         gap: 10px;
     }
-
     .gallery img {
         max-width: 90%;
     }
@@ -216,3 +210,4 @@ footer {
         margin: 10px 0;
     }
 }
+
