@@ -14,7 +14,14 @@ tapestryImage.addEventListener('click', () => {
     }
 });
 
-// Remove hover effect when audio ends
-audio.addEventListener('pause', () => {
-    tapestryImage.classList.remove('hover-effect');
-});
+// Display content on hover
+function displayContent(element) {
+  const content = element.querySelector('.contentContainer');
+  content.style.opacity = 1;  // Show the content
+}
+
+// Hide content on hover leave
+function hideContent(element) {
+  const content = element.querySelector('.contentContainer');
+  content.style.opacity = 0;  // Hide the content
+}
