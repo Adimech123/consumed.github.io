@@ -29,6 +29,12 @@ header {
     width: 100%;
     display: flex;
     justify-content: center; /* Centers header content */
+
+    header a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the default text color */
+}
+
 }
 
 header h1 {
