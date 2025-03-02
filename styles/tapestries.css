@@ -37,7 +37,7 @@ header h1 {
     margin: 30px 0;
     letter-spacing: 1px;
     color: #a8200d; 
-    text-decoration: none;
+    text-decoration: none; /* Ensures no underline */
 }
 
 /* Navbar */
@@ -204,3 +204,4 @@ footer {
         margin: 10px 0;
     }
 }
+
