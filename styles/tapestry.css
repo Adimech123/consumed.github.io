@@ -18,12 +18,25 @@ body {
     background-color: #f5f3ed;
 }
 
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers header content */
+}
+
+header a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the default text color */
+}
+
 header h1 {
-    font-family: "Mauline";
-    font-size: 10vw; /* Scales based on screen width */
-    margin: 20px 0;
+    font-family: "Mauline", "Courier", sans-serif; /* Fallback font */
+    font-size: 10vw; /* Responsive font size */
+    margin: 30px 0;
     letter-spacing: 1px;
-    color: #a8200d;
+    color: #a8200d; 
+    text-decoration: none; /* Ensures no underline */
 }
 
 nav {
