@@ -9,6 +9,27 @@
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers header content */
+}
+
+header a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the default text color */
+}
+
+header h1 {
+    font-family: "Mauline", "Courier", sans-serif; /* Fallback font */
+    font-size: 10vw; /* Responsive font size */
+    margin: 30px 0;
+    letter-spacing: 1px;
+    color: #a8200d; 
+    text-decoration: none; /* Ensures no underline */
+}
+
 #connect h1 {
     font-size: 2rem;
     color: #a8200d;
