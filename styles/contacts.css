@@ -15,6 +15,73 @@
     margin-bottom: 20px;
 }
 
+/* Navbar */
+nav {
+    background-color: #f5f3ed;
+    padding: 10px;
+    font-size: 16px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #a8200d;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Highlighted menu items */
+nav ul li a[href="index.html"],
+nav ul li a[href="project2.html"] {
+    font-weight: bold;
+}
+
+section {
+    padding: 5vw;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #a8200d;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+footer {
+    margin: 20px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@media (min-width: 1024px) {
+    section {
+        max-width: 700px;
+    }
+}
+
+
 .input-box {
     display: flex;
     flex-direction: column;
