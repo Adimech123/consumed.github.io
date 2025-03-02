@@ -18,12 +18,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Ensure the image stays within the div */
 }
 
 .hero img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Adjust as needed: 'contain' if you want to fit without cropping */
 }
 
 
