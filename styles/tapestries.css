@@ -8,13 +8,12 @@ fix this code: @font-face {
 }
 
 body {
-    font-family: "Courier", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     width: 100%;
     min-height: 100vh; /* Ensures full viewport height */
-    background: url("Squiggle.png") no-repeat top center;
     background-size: cover;
     background-position: center -10%;
     background-color: #f5f3ed;
@@ -37,7 +36,7 @@ header a {
 }
 
 header h1 {
-    font-family: "Mauline", "Courier", sans-serif; /* Fallback font */
+    font-family: "Mauline",'Quicksand', sans-serif;
     font-size: 10vw; /* Responsive font size */
     margin: 30px 0;
     letter-spacing: 1px;
@@ -71,7 +70,7 @@ nav ul li {
 nav ul li a {
     color: #a8200d;
     text-decoration: none;
-    font-family: "Courier New", monospace;
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     letter-spacing: 2px;
 }
@@ -95,7 +94,7 @@ section {
 }
 
 section h2 {
-    font-family: "Aptos Display", bold;
+    font-family: 'Quicksand', bold;
     margin-bottom: 20px;
     color: #a8200d;
     font-size: clamp(24px, 4vw, 32px);
