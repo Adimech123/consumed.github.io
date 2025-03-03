@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/tapestry.css"> <!-- Link to external CSS -->
     <script defer src="./scripts/audioScript.js"></script> <!-- Link to external JS -->
+    <script defer src="./scripts/carousel.js"></script> <!-- Link to carousel JS -->
+    <title>Consumed</title>
 </head>
 <body>
     <header>
@@ -23,10 +25,9 @@
     <!-- Image with effect -->
     <img id="tapestryImage" src="assets/images/exp1.jpg" alt="Tapestry 1">
 
-   <audio id="audio" loop>
-    <source src="assests/videos/music2.mpeg" type="audio/mpeg">
-</audio>
-
+    <audio id="audio" loop>
+        <source src="assets/videos/music2.mpeg" type="audio/mpeg">
+    </audio>
 
     <main>
         <p>CLICK ON THE IMAGE FOR AUDIO</p>
@@ -34,30 +35,26 @@
         <section id="about">
             <h2>About the Exhibition</h2>
             <p>This tapestry tells the story of a person nearly forgotten by history as a victim of 9/11.</p>
-            
         </section>
 
-<section id="image-carousel" class="splide" aria-label="Beautiful Images">
-  <div class="splide__track">
-		<ul class="splide__list">
-			<li class="splide__slide">
-				<img src="assets/images/exp1.jpg" alt="Tapestry 1">
-			</li>
-			<li class="splide__slide">
-				<img src="assets/images/exp1.jpg" alt="Tapestry 1">
-			</li>
-			<li class="splide__slide">
-				<img src="assets/images/exp1.jpg" alt="Tapestry 1">
-			</li>
-		</ul>
-  </div>
-</section>
-
-        
         <section id="projects">
             <h2>Creator</h2>
             <p>Amelie Dimech</p>
         </section>
     </main>
+
+    <!-- Image Carousel Section -->
+    <section class="carousel-container">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <div class="carousel">
+            <img src="assets/images/exp1.jpg" alt="Tapestry 1">
+            <img src="assets/images/exp2.jpg" alt="Tapestry 2">
+            <img src="assets/images/exp3.jpg" alt="Tapestry 3">
+            <img src="assets/images/exp4.jpg" alt="Tapestry 4">
+        </div>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
 </body>
 </html>
+
