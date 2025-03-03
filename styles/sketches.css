@@ -43,9 +43,11 @@ header h1 {
 
 /* Navbar */
 nav {
+    width: 100%;
     background-color: #f5f3ed;
-    padding: 10px;
-    font-size: 16px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; /* Centers navbar items */
 }
 
 nav ul {
@@ -70,10 +72,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+       color: #a8200d;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
     text-decoration: underline;
 }
 
-/* Highlighted menu item */
+/* Bold active page */
 nav ul li a[href="sketches.html"] {
     font-weight: bold;
 }
