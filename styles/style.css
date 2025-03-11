@@ -44,7 +44,14 @@ nav ul {
 
 nav ul li {
     display: inline-block;
+
 }
+
+nav ul li a[href="index.html"] {
+    font-family: 'Mauline', sans-serif;
+    font-weight: normal; /* or bold, depending on preference */
+}
+
 
 nav ul li a {
     color: #a8200d;
