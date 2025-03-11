@@ -100,9 +100,10 @@ nav ul li a[href="project2.html"] {
     color: white;
     padding: 5vw;
     text-align: center;
-    width: 100%; /* Makes it take the full width */
-    margin: 0; /* Ensures no extra space around it */
-    border-radius: 0; /* Removes rounded corners to fully extend */
+    height: 150;
+    width: 90%; /* Makes it responsive */
+    max-width: 1200px; /* Prevents it from getting too wide on large screens */
+    margin: 0 auto; /* Centers it horizontally */
 }
 
 
