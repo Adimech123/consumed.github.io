@@ -16,7 +16,7 @@ body {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-color: #faefc1;
+    background-color: #f5eed3;
 }
 
 body, html {
@@ -26,7 +26,7 @@ body, html {
 /* Navbar */
 nav {
      width: 100%;
-    background-color: #faefc1;
+    background-color: #f5eed3;
     padding: 10px 0;
     display: flex;
     justify-content: center; /* Centers navbar items */
