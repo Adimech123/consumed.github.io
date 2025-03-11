@@ -44,9 +44,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-
 }
-
 
 nav ul li a {
     color: #a8200d;
@@ -91,8 +89,6 @@ nav ul li a[href="project2.html"] {
     font-family: 'Mauline', sans-serif;
     font-size: 3vw; /* Responsive font size */
     letter-spacing: 1px; 
-
-    
 }
 
 .blue-section {
@@ -104,184 +100,35 @@ nav ul li a[href="project2.html"] {
     width: 90%; /* Makes it responsive */
     max-width: 2000px; /* Prevents it from getting too wide on large screens */
     margin: 0 auto; /* Centers it horizontally */
-}
-
-
-/* Header */
-header {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
 }
-
-header h1 {
-    font-family: 'Mauline', sans-serif;
-    font-size: clamp(3rem, 10vw, 8rem); /* Adjusted for responsiveness */
-    margin: 30px 0;
-    letter-spacing: 1px;
-    color: #a8200d;
-}
-
-section {
-    padding: 5vw;
-    margin: auto;
-    font-family: 'Quicksand', sans-serif;
-}
-
-section h2 {
-    font-size: 1.5rem;
-    color: #a8200d;
-    margin-bottom: 15px;
-}
-
-section p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-footer {
-    margin: 20px 0;
-    font-family: 'Quicksand', sans-serif;
-}
-
-@media (min-width: 1024px) {
-    section {
-        max-width: 700px;
-    }
-}
-
-/* Hero Video Styles */
-.background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.background-video-content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-/* Contact Form */
-#connect {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    max-width: 500px;
-    margin: 50px auto;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    font-family: 'Quicksand', sans-serif;
-}
-
-#connect h1 {
-    font-size: 2rem;
-    color: #a8200d;
-    margin-bottom: 20px;
-}
-
-.input-box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    text-align: left;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.input-box label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.input-box input,
-.input-box textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.input-box textarea {
-    resize: vertical;
-}
-
-button {
-    background-color: #a8200d;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
-    font-family: 'Quicksand', sans-serif;
-}
-
-button:hover {
-    background-color: #850e08;
-}
-
-
-.btn {
-    display: inline-block;
-    background-color: #a8200d;
-    color: white;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 15px;
-    text-decoration: none;
-    transition: background 0.3s ease-in-out;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.btn:hover {
-    background-color: #850e08;
-}
-
-footer {
-    background-color: #e0a03f; 
-    color: white; 
-    padding: 20px 0; /* Add some padding */
-    text-align: center; /* Center the text */
-    font-family: 'Quicksand', sans-serif;
-}
-footer {
-    background-color: #e0a03f; 
-    color: white; 
-    padding: 20px 0; /* Add some padding */
-    text-align: center; /* Center the text */
-    font-family: 'Quicksand', sans-serif;
-}
-
 
 /* Carousel Container */
 .carousel-container {
     position: relative;
-    width: 80%;
-    max-width: 800px;
-    margin: 30px auto;
+    width: 100%; /* Make it span the full width of the blue section */
+    max-width: 800px; 
+    height: 100%; /* Ensure it fills the blue section */
+    margin: 0 auto; /* Center it */
     overflow: hidden;
     border-radius: 10px;
 }
 
-/* Carousel Images */
+/* Adjust the carousel to fit within the blue section */
 .carousel {
     display: flex;
+    height: 100%;
     transition: transform 0.5s ease-in-out;
+    align-items: center; /* Ensure images stay vertically centered */
 }
 
+/* Ensure images fit within the blue section */
 .carousel img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the area without distortion */
     border-radius: 10px;
 }
 
