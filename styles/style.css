@@ -263,8 +263,6 @@ footer {
 }
 
 
-
-
 /* Carousel Container */
 .carousel-container {
     position: relative;
@@ -285,4 +283,32 @@ footer {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 90%;
+    }
 }
