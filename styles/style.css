@@ -47,18 +47,12 @@ nav ul li {
 
 }
 
-nav ul li a[href="index.html"] {
-    font-family: 'Mauline', sans-serif;
-    font-weight: normal; /* or bold, depending on preference */
-    font-size: 40px;
-}
-
 
 nav ul li a {
     color: #a8200d;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
-    font-size: 10px;
+    font-size: 16px;
     letter-spacing: 2px;
 }
 
