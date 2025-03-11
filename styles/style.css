@@ -261,3 +261,28 @@ footer {
     text-align: center; /* Center the text */
     font-family: 'Quicksand', sans-serif;
 }
+
+
+
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Carousel Images */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
