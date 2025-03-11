@@ -254,4 +254,10 @@ footer {
     text-align: center; /* Center the text */
     font-family: 'Quicksand', sans-serif;
 }
-
+footer {
+    background-color: #e0a03f; 
+    color: white; 
+    padding: 20px 0; /* Add some padding */
+    text-align: center; /* Center the text */
+    font-family: 'Quicksand', sans-serif;
+}
