@@ -101,6 +101,15 @@ nav ul li a[href="project2.html"] {
     
 }
 
+.blue-section {
+    background-color: #007BFF;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    position: relative; /* Ensures it stays in normal flow */
+    z-index: 1; /* Stacks above background elements */
+}
+
 
 /* Header */
 header {
