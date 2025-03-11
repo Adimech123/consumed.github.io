@@ -96,29 +96,13 @@ nav ul li a[href="project2.html"] {
 }
 
 .blue-section {
-    background-color: #007BFF; /* Blue background */
-    color: white; /* White text for contrast */
-    padding: 5vw; /* Responsive padding */
+    background-color: #007BFF;
+    color: white;
+    padding: 5vw;
     text-align: center;
-    width: 100%; /* Makes it full width */
-    max-width: 1200px; /* Prevents it from stretching too much on large screens */
-    margin: auto; /* Centers it horizontally */
-    border-radius: 10px; /* Adds a subtle rounded corner */
-}
-
-/* Media Query for Tablets (768px and below) */
-@media (max-width: 768px) {
-    .blue-section {
-        padding: 8vw; /* Increases padding for better spacing */
-    }
-}
-
-/* Media Query for Mobile Phones (480px and below) */
-@media (max-width: 480px) {
-    .blue-section {
-        padding: 10vw; /* More padding on smaller screens */
-        font-size: 1rem; /* Adjust font size for readability */
-    }
+    width: 100%; /* Makes it take the full width */
+    margin: 0; /* Ensures no extra space around it */
+    border-radius: 0; /* Removes rounded corners to fully extend */
 }
 
 
