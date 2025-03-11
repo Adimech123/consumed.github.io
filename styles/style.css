@@ -100,7 +100,7 @@ nav ul li a[href="project2.html"] {
     color: white;
     padding: 5vw;
     text-align: center;
-    height: 300;
+    height: 150px;
     width: 90%; /* Makes it responsive */
     max-width: 2000px; /* Prevents it from getting too wide on large screens */
     margin: 0 auto; /* Centers it horizontally */
