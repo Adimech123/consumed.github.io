@@ -1,4 +1,4 @@
-fix this code: @font-face {
+@font-face {
     font-family: 'Mauline';
     src: url('../assets/fonts/Mauline.woff2') format('woff2'),
          url('../assets/fonts/Mauline.woff') format('woff'),
@@ -46,9 +46,11 @@ header h1 {
 
 /* Navbar */
 nav {
-     width: 100%;
+    width: 100%;
     background-color: #f5eed3;
     padding: 10px 0;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center; /* Centers navbar items */
 }
@@ -209,10 +211,36 @@ footer {
     }
 }
 
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #a8200d;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img {
+    width: 32px;
+    margin-top: -16px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
 footer {
+    margin: 0;
     background-color: #e0a03f; 
     color: white; 
-    padding: 20px 0; /* Add some padding */
+    padding: 5px 0;
     text-align: center; /* Center the text */
     font-family: 'Quicksand', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
