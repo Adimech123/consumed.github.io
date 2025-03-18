@@ -91,7 +91,7 @@ nav ul li a[href="project2.html"] {
     transform: translate(-50%, -50%);
     color: white;
     font-family: 'Mauline', sans-serif;
-    font-size: 3vw; /* Responsive font size */
+    font-size: 8vw; /* Responsive font size */
     letter-spacing: 1px; 
 
     
@@ -397,4 +397,9 @@ footer {
         width: 100%;
         margin: auto;
     }
+
+    .hero-text{
+        font-size: 3vw;
+    }
+    
 }
