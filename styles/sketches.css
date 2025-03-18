@@ -103,11 +103,6 @@ section p {
     line-height: 1.6;
 }
 
-/* Footer */
-footer {
-    margin: 20px 0;
-}
-
 /* Centered Gallery Styling */
 .gallery {
     display: flex;
@@ -169,8 +164,6 @@ footer {
     padding: 5px 0;
     text-align: center; /* Center the text */
     font-family: 'Quicksand', sans-serif;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 

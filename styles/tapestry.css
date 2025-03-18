@@ -103,10 +103,6 @@ p {
     margin: 0 auto;
 }
 
-footer {
-    margin: 20px 0;
-}
-
 /* Responsive Images */
 img {
     display: block;
@@ -116,12 +112,6 @@ img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-img:hover{
-    transform: scale(1.1);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Hover effect while playing */
@@ -188,11 +178,6 @@ img:hover{
     }
 }
 
-/* Footer */
-footer {
-    margin: 20px 0;
-}
-
 /* Centered Gallery Styling */
 .gallery {
     display: flex;
@@ -254,7 +239,5 @@ footer {
     padding: 5px 0;
     text-align: center; /* Center the text */
     font-family: 'Quicksand', sans-serif;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }

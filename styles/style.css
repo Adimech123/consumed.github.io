@@ -141,11 +141,6 @@ section p {
     line-height: 1.6;
 }
 
-footer {
-    margin: 20px 0;
-    font-family: 'Quicksand', sans-serif;
-}
-
 @media (min-width: 1024px) {
     section {
         max-width: 700px;
@@ -249,27 +244,10 @@ button:hover {
     background-color: #850e08;
 }
 
-footer {
-    background-color: #e0a03f; 
-    color: white; 
-    padding: 20px 0; /* Add some padding */
-    text-align: center; /* Center the text */
-    font-family: 'Quicksand', sans-serif;
-}
-footer {
-    background-color: #e0a03f; 
-    color: white; 
-    padding: 20px 0; /* Add some padding */
-    text-align: center; /* Center the text */
-    font-family: 'Quicksand', sans-serif;
-}
-
-
 /* Ensure the carousel fits within the blue section */
 .carousel-container {
     position: relative;
     width: 100%; /* Make it span the full width of the blue section */
-    max-width: 800px; 
     height: 100%; /* Ensure it fills the blue section */
     margin: 0 auto; /* Center it */
     overflow: hidden;
@@ -280,16 +258,18 @@ footer {
 .carousel {
     display: flex;
     height: 100%;
+    width: 200px;
+    margin: 0 -20px;
     transition: transform 0.5s ease-in-out;
     align-items: center; /* Ensure images stay vertically centered */
 }
 
 /* Ensure images fit within the blue section */
 .carousel img {
-    width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures images fill the area without distortion */
-    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
 }
 
 /* Adjust the blue section height to accommodate the carousel */
@@ -309,7 +289,7 @@ footer {
 
 
 /* Navigation Buttons */
-.prev, .next {
+/* .prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -327,13 +307,12 @@ footer {
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .carousel-container {
         width: 90%;
-    
     }
 
 /* width */
@@ -390,7 +369,32 @@ footer {
     padding: 5px 0;
     text-align: center; /* Center the text */
     font-family: 'Quicksand', sans-serif;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .carousel-container {
+        display: flex;
+        width: 10%; /* Make it span the full width of the blue section */
+        height: 100%; /* Ensure it fills the blue section */
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    
+    /* Adjust the carousel to fit within the blue section */
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        align-items: center; /* Ensure images stay vertically centered */
+        border-radius: 10px;
+        width: 100%;
+        offset: 50px;
+    }
+    
+    /* Ensure images fit within the blue section */
+    .carousel img {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
 }

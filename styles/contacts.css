@@ -87,6 +87,7 @@ nav ul li a[href="contacts.html"]{
 
 section {
     font-family: 'Quicksand', sans-serif;
+    height: 100vh;
 }
 
 section > div {
@@ -103,11 +104,6 @@ section h2 {
 section p {
     font-size: 1rem;
     line-height: 1.6;
-}
-
-footer {
-    margin: 20px 0;
-    font-family: 'Quicksand', sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -192,7 +188,7 @@ footer {
     padding: 5px 0;
     text-align: center; /* Center the text */
     font-family: 'Quicksand', sans-serif;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
 }

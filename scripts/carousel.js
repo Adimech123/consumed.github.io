@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalImages = images.length;
 
     function showSlide() {
-        const offset = -index * 100;
-        carousel.style.transform = `translateX(${offset}%)`;
+        const offset = -index * images[index].clientWidth;
+        carousel.style.transform = `translateX(${offset}px)`;
     }
 
     window.nextSlide = function () {
