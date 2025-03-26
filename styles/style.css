@@ -31,7 +31,7 @@ header {
 
 header h1 {
     font-family: 'Mauline', sans-serif;
-    font-size: clamp(3rem, 10vw, 8rem);
+    font-size: clamp(20rem, 30vw, 40rem);
     margin: 30px 0;
     letter-spacing: 1px;
     color: #a8200d;
