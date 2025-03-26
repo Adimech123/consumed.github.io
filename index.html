@@ -5,80 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consumed</title>
     <link rel="stylesheet" href="styles/contacts.css"> 
-    <link href="https://fonts.google.com/specimen/Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
   </head>
 <body>
  
-    <nav>
-        <ul>
-            <li><a href="tapestries.html">Tapestries</a></li>
-            <li><a href="sketches.html">Creations</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-    </nav>
-
-  <header>
+    <header>
       <a href="index.html">
         <h1>Consumed</h1>
       </a>
     </header>
 
-     
-     
+    <nav>
+        <ul>
+            <li><a href="tapestries.html">Tapestries</a></li>
+            <li><a href="sketches.html">Creations</a></li>
+            <li><a href="#connect">Contacts</a></li>
+        </ul>
+    </nav>
+
     <main>
         <section id="about">
            <h2>"Are our memories really ours?"</h2>
-            
            <p>I set out to explore whether memories can be captured and shared through the senses by creating mixed-media tapestries and a website designed to create an immersive experience. My aim is to immerse viewers in a stranger's memory—an experience that will blend physical mixed media with digital art.</p>
         </section>
 
+        <section id="explore-tapestries">
+            <p>Begin the experience</p>
+            <a href="tapestries.html" class="btn">Explore Tapestries</a>
+        </section>
 
-
- <section id="explore-tapestries">
-     <p>Begin the experience</p>
-    <a href="tapestries.html" class="btn">Explore Tapestries</a>
-</section>
-
-
-             <section id="connect">
-        <div>
-        <h1 class="header">Get In Touch</h1>
-
-        <form action="submit_form.php" method="POST">
-            <div class="input-box">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+        <section id="connect">
+            <div>
+                <h1 class="header">Get In Touch</h1>
+                <form action="submit_form.php" method="POST">
+                    <div class="input-box">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="message">Share your memories or ask any question</label>
+                        <textarea id="message" name="message" placeholder="What's on your mind?" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-
-            <div class="input-box">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
-            </div>
-
-            <div class="input-box">
-                <label for="message">Share your memories or ask any question</label>
-                <textarea id="message" name="message" placeholder="What's on your mind?" rows="4" required></textarea>
-            </div>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    </section>
-
+        </section>
+    </main>
     
-<footer>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/amelie.dimech.9" target="_blank">
-            <img src="assets/images/facebook.png" alt="Facebook" class="social-icon">
-        </a>
-        <a href="https://www.instagram.com/amelie.dimech?igsh=b2xwbzE2a2h1ZTRm&utm_source=qr" target="_blank">
-            <img src="assets/images/insta.png" alt="Insta" class="social-icon">
-        </a>
-    </div>
-</footer>
-
-
-    
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/amelie.dimech.9" target="_blank">
+                <img src="assets/images/facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/amelie.dimech?igsh=b2xwbzE2a2h1ZTRm&utm_source=qr" target="_blank">
+                <img src="assets/images/insta.png" alt="Insta" class="social-icon">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
+
