@@ -48,6 +48,50 @@ header h1 {
     }
 }
 
+/* Button */
+
+/* Section Styling */
+#explore-tapestries {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#explore-tapestries p {
+    font-size: 1.2rem;
+    color: #a8200d;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background-color: #a8200d;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.btn:hover {
+    background-color: #85180b;
+    transform: translateY(-5px);
+}
+
+/* Active State */
+.btn:active {
+    background-color: #750d07;
+    transform: translateY(0);
+}
+
+
+
+
 
 /* Navbar */
 nav {
