@@ -58,7 +58,7 @@ nav ul li a[href="contacts.html"]{
 }
 
 section {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Manjari', sans-serif;
     height: 100vh;
 }
 
@@ -138,7 +138,7 @@ button:hover {
 
 /* General Styles */
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Manjari', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -256,7 +256,7 @@ header h1 {
 section {
     padding: 5vw;
     margin: auto;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Manjari', sans-serif;
 }
 
 section h2 {
