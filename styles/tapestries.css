@@ -13,15 +13,30 @@ body {
     padding: 0;
     text-align: center;
     width: 100%;
-    min-height: 100vh; /* Ensures full viewport height */
-    background-size: cover;
-    background-position: center -10%;
-    background-color: #f5eed3;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers all content horizontally */
-    justify-content: space-between; /* Ensures space between header, content, and footer */
+    height: 100%;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
 }
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allows clicks through */
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); 
+    opacity: 0.2; /* Adjust noise visibility */
+}
+
 
 /* Header */
 header {
