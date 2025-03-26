@@ -254,6 +254,10 @@ section p {
 /* Contact Form */
 #connect {
     font-family: 'Manjari', sans-serif;
+    #connect .header {
+    text-align: right;
+}
+
 }
 
 #connect h1 {
