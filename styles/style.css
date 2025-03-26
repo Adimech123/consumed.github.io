@@ -94,14 +94,17 @@ header h1 {
 
 
 /* Navbar */
+/* Navbar */
 nav {
     width: 100%;
     background-color: #f5eed3;
     padding: 10px 0;
-    position: sticky;
-    top: 0;
+    position: sticky; /* This makes it sticky */
+    top: 0; /* Stick to the top */
     display: flex;
     justify-content: center;
+    z-index: 1000; /* Ensure it stays above other elements when scrolling */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
 }
 
 nav ul {
@@ -130,12 +133,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Highlighted menu items */
-nav ul li a[href="contacts.html"],
-nav ul li a[href="tapestries.html"] {
-    font-weight: bold;
-}
-
+/* Tapestries */
 /* Section Styling */
 section {
     font-family: 'Manjari', sans-serif;
