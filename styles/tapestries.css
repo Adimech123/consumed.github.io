@@ -13,10 +13,18 @@ body {
     padding: 0;
     text-align: center;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    min-height: 100vh; /* Ensures full viewport height */
+    
+    /* Animated gradient background */
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffdde1, #a18cd1);
     background-size: 300% 300%;
     animation: gradientAnimation 10s ease infinite;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 /* Gradient Animation */
@@ -25,6 +33,8 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+/* Grain Effect */
 body::before {
     content: "";
     position: fixed;
@@ -32,31 +42,30 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* Allows clicks through */
+    pointer-events: none; 
     background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); 
-    opacity: 0.2; /* Adjust noise visibility */
+    opacity: 0.2;
+    mix-blend-mode: overlay;
 }
-
 
 /* Header */
 header {
     width: 100%;
     display: flex;
-    justify-content: center; /* Centers header content */
+    justify-content: center;
 }
 
 header a {
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Keeps the default text color */
+    text-decoration: none;
+    color: inherit;
 }
 
 header h1 {
-    font-family: 'Mauline';
-    font-size: 10vw; /* Responsive font size */
+    font-family: 'Mauline', serif;
+    font-size: 10vw;
     margin: 30px 0;
     letter-spacing: 1px;
-    color: #a8200d; 
-    text-decoration: none; /* Ensures no underline */
+    color: #a8200d;
 }
 
 /* Navbar */
@@ -67,7 +76,7 @@ nav {
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: center; /* Centers navbar items */
+    justify-content: center;
 }
 
 nav ul {
@@ -106,7 +115,7 @@ section {
     padding: 40px 10px;
     width: 90%;
     max-width: 800px;
-    margin: 0 auto; /* Centers section */
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -122,47 +131,49 @@ section p {
     line-height: 1.6;
 }
 
-/* Centered Gallery Styling */
+/* Centered Gallery */
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centers images horizontally */
-    align-items: center; /* Centers images vertically */
+    justify-content: center;
+    align-items: center;
     gap: 15px;
     margin-top: 20px;
 }
 
-#tapestry1{
+/* Tapestry Background Images */
+#tapestry1 {
     background-image: url("../assets/images/exp1.jpg");
 }
 
-#tapestry2{
+#tapestry2 {
     background-image: url("../assets/images/exp2.jpg");
 }
 
-.tapestryContainer{
+.tapestryContainer {
     width: 100%;
     height: 100%;
-    background-size:cover;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
     color: #a8200d;
 }
 
+/* Gallery Items */
 .gallery > div {
     display: inline-block;
     overflow: hidden;
-    border-radius: 15px; /* Ensures rounded corners */
+    border-radius: 15px;
     width: 60vw;
     height: 50vh;
-    text-decoration: none;
 }
 
 .gallery img {
     display: block;
     width: 100%;
-    max-width: 200px; /* Controls image size */
-    border-radius: 15px; /* Rounds edges */
+    max-width: 200px;
+    border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -171,7 +182,8 @@ section p {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.contentContainer{
+/* Content Container */
+.contentContainer {
     width: 100%;
     height: 100%;
     opacity: 0.2;
@@ -182,12 +194,12 @@ section p {
 }
 
 .contentContainer h1,
-.contentContainer h2{
+.contentContainer h2 {
     width: 100%;
     margin: auto;
 }
 
-.contentContainer button{
+.contentContainer button {
     width: 75%;
     height: 40px;
     background-color: #a8200d;
@@ -197,22 +209,24 @@ section p {
     border: none;
     margin-bottom: 50px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-/* Deaktop Styles */
+.contentContainer button:hover {
+    background-color: #85180b;
+}
+
+/* Desktop Styles */
 @media (min-width: 1024px) {
     .gallery {
-        display: flex;
         gap: 10px;
     }
+
     .gallery img {
         max-width: 90%;
     }
 
     .gallery > div {
-        display: block;
-        overflow: hidden;
-        border-radius: 15px; /* Ensures rounded corners */
         width: 20vw;
         height: 50vh;
         margin: 10px 0;
@@ -241,12 +255,13 @@ section p {
     transform: scale(1.2);
 }
 
+/* Footer */
 footer {
     margin: 0;
-    background-color: #e0a03f; 
-    color: white; 
+    background-color: #e0a03f;
+    color: white;
     padding: 5px 0;
-    text-align: center; /* Center the text */
+    text-align: center;
     font-family: 'Quicksand', sans-serif;
     width: 100%;
 }
