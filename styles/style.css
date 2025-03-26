@@ -131,6 +131,10 @@ section {
     text-align: center;
 }
 
+#tapestries .header {
+    text-align: left;
+}
+
 section h2 {
     font-size: clamp(24px, 4vw, 32px);
     color: #a8200d;
