@@ -7,22 +7,23 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     width: 100%;
-    min-height: 100vh; /* Ensures full viewport height */
-    
-
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
-
 
 /* Header */
 header {
@@ -104,15 +105,11 @@ section h2 {
 section p {
     font-size: 1.1em;
     line-height: 1.6;
-}
-
-
-t-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Fix text-shadow */
     padding: 20px;
-    font-family: 'Quicksand', sans-serif;
 }
 
-
+/* Button Styles */
 button {
     background-color: #a8200d;
     color: white;
@@ -129,7 +126,11 @@ button:hover {
     background-color: #850e08;
 }
 
+button:focus {
+    outline: 3px solid #a8200d;
+}
 
+/* .btn Styles */
 .btn {
     display: inline-block;
     background-color: #a8200d;
@@ -146,6 +147,9 @@ button:hover {
     background-color: #850e08;
 }
 
+.btn:focus {
+    outline: 3px solid #a8200d;
+}
 
 /* Content Container */
 .contentContainer {
@@ -230,3 +234,4 @@ footer {
     font-family: 'Quicksand', sans-serif;
     width: 100%;
 }
+
