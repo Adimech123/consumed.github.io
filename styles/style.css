@@ -7,23 +7,130 @@
     font-style: normal;
 }
 
+/* Contact */
+#connect h1 {
+    font-size: 2rem;
+    color: #a8200d;
+    margin: 20px auto;
+    text-align: center;
+}
 
-/* Scroll */
-.scroll watcher {
-    height: 10px;
-    position: fixed;
+/* Navbar */
+nav {
+     width: 100%;
+    background-color: #f5eed3;
+    padding: 10px 0;
+    position: sticky;
     top: 0;
-    z-index: 1000;
-    background-colour: white;
-    width: 100%
-    scale: 0 1;
-    animation: scroll-watcher linear
-    animation-timeline: scroll();
+    display: flex;
+    justify-content: center; /* Centers navbar items */
 }
 
-@keyframes scroll-watcher {
-    to {scale: 1 1; }
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #a8200d;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Highlighted menu items */
+nav ul li a[href="contacts.html"]{
+    font-weight: bold;
+}
+
+section {
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+}
+
+section > div {
+    margin: auto;
+    width: 90%;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #a8200d;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+    section > div{
+        max-width: 700px;
+    }
+}
+
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-box textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #a8200d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    margin: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+button:hover {
+    background-color: #850e08;
+}
+
 
 
 
