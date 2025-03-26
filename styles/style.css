@@ -69,7 +69,7 @@ header h1 {
     color: white;
     padding: 15px 30px;
     font-size: 1.1rem;
-    font-weight: regular;
+    font-weight: normal; /* Changed from "regular" to "normal" */
     text-decoration: none;
     border-radius: 5px;
     letter-spacing: 1px;
@@ -88,8 +88,6 @@ header h1 {
     transform: translateY(0);
 }
 
-
-
 /* Navbar */
 nav {
     width: 100%;
@@ -100,7 +98,6 @@ nav {
     display: flex;
     justify-content: center;
     z-index: 1000; /* Ensure it stays above other elements when scrolling */
-
 }
 
 nav ul {
@@ -120,9 +117,10 @@ nav ul li {
 nav ul li a {
     color: #a8200d;
     text-decoration: none;
-    font-family: 'Manjari', regular;
+    font-family: 'Manjari', sans-serif;
     font-size: 16px;
     letter-spacing: 2px;
+    font-weight: normal; /* Added font-weight for consistency */
 }
 
 nav ul li a:hover {
@@ -132,7 +130,7 @@ nav ul li a:hover {
 /* Tapestries */
 /* Section Styling */
 section {
-    font-family: 'Manjari', regular;
+    font-family: 'Manjari', sans-serif;
     padding: 5vw;
     margin: auto;
     width: 90%;
@@ -255,7 +253,7 @@ section p {
 
 /* Contact Form */
 #connect {
-    font-family: 'Manjari', regular;
+    font-family: 'Manjari', sans-serif;
 }
 
 #connect h1 {
@@ -314,8 +312,6 @@ form {
     flex-direction: column;
 }
 
-
-
 /* Social Media Icons */
 .social-icons {
     display: flex;
@@ -372,5 +368,3 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: #9dfc03;
 }
-
-
