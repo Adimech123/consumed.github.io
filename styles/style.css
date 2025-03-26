@@ -15,10 +15,6 @@ body {
     width: 100%;
     min-height: 100vh; /* Ensures full viewport height */
     
-    /* Animated gradient background */
-    background: linear-gradient(45deg, #f5eed3, #32a852, #a83246, #a18cd1);
-    background-size: 300% 300%;
-    animation: gradientAnimation 10s ease infinite;
 
     display: flex;
     flex-direction: column;
@@ -27,26 +23,6 @@ body {
     position: relative;
 }
 
-/* Gradient Animation */
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* Grain Effect */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; 
-    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); 
-    opacity: 0.2;
-    mix-blend-mode: overlay;
-}
 
 /* Header */
 header {
