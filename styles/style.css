@@ -135,6 +135,13 @@ section {
     text-align: left;
 }
 
+#tapestries h1 {
+    font-size: 2rem;
+    color: #f5eed3;
+    margin: 20px auto;
+    text-align: right;
+}
+
 section h2 {
     font-size: clamp(24px, 4vw, 32px);
     color: #a8200d;
