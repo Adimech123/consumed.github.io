@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-     <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consumed</title>
     <link rel="stylesheet" href="styles/contacts.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
     <style>
         html {
             scroll-behavior: smooth;
         }
     </style>
-  </head>
+</head>
 <body>
- 
 
     <nav>
         <ul>
@@ -24,18 +23,16 @@
         </ul>
     </nav>
 
-
-  <header>
-      <a href="index.html">
-        <h1>Consumed</h1>
-      </a>
+    <header>
+        <a href="index.html">
+            <h1>Consumed</h1>
+        </a>
     </header>
 
-     
     <main>
         <section id="about">
-           <h2>"Are our memories really ours?"</h2>
-           <p>I set out to explore whether memories can be captured and shared through the senses by creating mixed-media tapestries and a website designed to create an immersive experience. My aim is to immerse viewers in a stranger's memory—an experience that will blend physical mixed media with digital art.</p>
+            <h2>"Are our memories really ours?"</h2>
+            <p>I set out to explore whether memories can be captured and shared through the senses by creating mixed-media tapestries and a website designed to create an immersive experience. My aim is to immerse viewers in a stranger's memory—an experience that will blend physical mixed media with digital art.</p>
         </section>
 
         <section id="explore-tapestries">
@@ -43,59 +40,30 @@
             <a href="tapestries.html" class="btn">Explore Tapestries</a>
         </section>
 
+        <section id="tapestries">
+            <script src="./scripts/tapestryHover.js"></script>
+            <div class="gallery">
+                <div>
+                    <div id="tapestry1" class="tapestryContainer" onmouseover="displayContent(this)" onmouseleave="hideContent(this)">
+                        <div class="contentContainer" style="opacity: 0;">
+                            <h1>Xhin tiddeciedi</h1>
+                            <h2>Itfa hawn</h2>
+                            <a href="tapestry1.html"><button>Visit Tapestry</button></a>
+                        </div>
+                    </div>
+                </div>
 
-
-<section id="tapestries">
-    <script src="./scripts/tapestryHover.js"></script>
-
-    <!-- Centered Gallery -->
-    <div class="gallery">
-      <div>
-        <div
-          id="tapestry1"
-          class="tapestryContainer"
-          onmouseover="displayContent(this)"
-          onmouseleave="hideContent(this)"
-        >
-          <div class="contentContainer" style="opacity: 0;">
-            <h1>Xhin tiddeciedi</h1>
-            <h2>Itfa hawn</h2>
-            <a href="tapestry1.html"><button>Visit Tapestry</button></a>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div
-          id="tapestry2"
-          class="tapestryContainer"
-          onmouseover="displayContent(this)"
-          onmouseleave="hideContent(this)"
-        >
-          <div class="contentContainer" style="opacity: 0;">
-            <h1>Xhin tiddeciedi</h1>
-            <h2>Itfa hawn</h2>
-            <a href="tapestry2.html"><button>Visit Tapestry</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-
-     
-    <main>
-      <section id="about">
-        <h2>The Consumed Tapestries</h2>
-        <p>
-          Click on the tapestry to learn more and continue the immersive
-          experience.
-        </p>
-      </section>
-
-
-
-
-         
+                <div>
+                    <div id="tapestry2" class="tapestryContainer" onmouseover="displayContent(this)" onmouseleave="hideContent(this)">
+                        <div class="contentContainer" style="opacity: 0;">
+                            <h1>Xhin tiddeciedi</h1>
+                            <h2>Itfa hawn</h2>
+                            <a href="tapestry2.html"><button>Visit Tapestry</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="connect">
             <div>
@@ -118,17 +86,13 @@
             </div>
         </section>
     </main>
-    
+
     <footer>
         <div class="social-icons">
-            <a href="https://www.facebook.com/amelie.dimech.9" target="_blank">
-                <img src="assets/images/facebook.png" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://www.instagram.com/amelie.dimech?igsh=b2xwbzE2a2h1ZTRm&utm_source=qr" target="_blank">
-                <img src="assets/images/insta.png" alt="Insta" class="social-icon">
-            </a>
+            <a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/images/insta.png" alt="Instagram"></a>
         </div>
     </footer>
+
 </body>
 </html>
-
