@@ -31,18 +31,12 @@ header {
 
 header h1 {
     font-family: 'Mauline', sans-serif;
-    font-size: clamp(20rem, 30vw, 40rem);
+    font-size: 50px;
     margin-top: 50px ;
     margin-bottom: 20px ;
     letter-spacing: 1px;
     color: #a8200d;
 }
-
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: clamp(10rem, 30vw, 16rem); /* Adjust this value to make the header larger */
-    }
 
     .carousel-container {
         width: 90%;
