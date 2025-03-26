@@ -69,10 +69,9 @@ header h1 {
     color: white;
     padding: 15px 30px;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: regular;
     text-decoration: none;
-    border-radius: 25px;
-    text-transform: uppercase;
+    border-radius: 5px;
     letter-spacing: 1px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -91,9 +90,6 @@ header h1 {
 
 
 
-
-
-/* Navbar */
 /* Navbar */
 nav {
     width: 100%;
@@ -104,7 +100,7 @@ nav {
     display: flex;
     justify-content: center;
     z-index: 1000; /* Ensure it stays above other elements when scrolling */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+
 }
 
 nav ul {
