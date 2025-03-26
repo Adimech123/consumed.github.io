@@ -158,7 +158,7 @@ section p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
     margin-top: 20px;
     margin-top: 60px;
 }
@@ -177,7 +177,7 @@ section p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
+    border-radius: 1px;
     color: #a8200d;
 }
 
