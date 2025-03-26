@@ -16,7 +16,7 @@ body {
     min-height: 100vh; /* Ensures full viewport height */
     
     /* Animated gradient background */
-    background: linear-gradient(45deg, #f5eed3, #e0dbc8, #e6e3da, #f5eed3);
+    background: linear-gradient(45deg, #f5eed3, #a6a18d , #f5e2a9, #f5eed3);
     background-size: 300% 300%;
     animation: gradientAnimation 10s ease infinite;
 
