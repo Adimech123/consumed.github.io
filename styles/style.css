@@ -7,12 +7,34 @@
     font-style: normal;
 }
 
-/* Contact */
-#connect h1 {
-    font-size: 2rem;
-    color: #a8200d;
-    margin: 20px auto;
+/* General Styles */
+body {
+    font-family: 'Manjari', sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f5eed3;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-family: 'Mauline', sans-serif;
+    font-size: clamp(3rem, 10vw, 8rem);
+    margin: 30px 0;
+    letter-spacing: 1px;
+    color: #a8200d;
 }
 
 /* Navbar */
@@ -43,7 +65,7 @@ nav ul li {
 nav ul li a {
     color: #a8200d;
     text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Manjari', sans-serif;
     font-size: 16px;
     letter-spacing: 2px;
 }
@@ -53,61 +75,25 @@ nav ul li a:hover {
 }
 
 /* Highlighted menu items */
-nav ul li a[href="contacts.html"] {
-    font-weight: bold;
-}
-
-/* General Section Styling */
-section {
-    font-family: 'Manjari', sans-serif;
-    padding: 5vw;
-    margin: auto;
-}
-
-section > div {
-    margin: auto;
-    width: 90%;
-}
-
-section h2 {
-    font-size: 1.5rem;
-    color: #a8200d;
-    margin-bottom: 15px;
-}
-
-section p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-@media (min-width: 1024px) {
-    section > div {
-        max-width: 700px;
-    }
-}
-
-
-
-/* Tapestries */
-/* Highlighted menu items */
+nav ul li a[href="contacts.html"],
 nav ul li a[href="tapestries.html"] {
     font-weight: bold;
 }
 
 /* Section Styling */
 section {
-    padding: 40px 10px;
+    font-family: 'Manjari', sans-serif;
+    padding: 5vw;
+    margin: auto;
     width: 90%;
     max-width: 800px;
-    margin: 0 auto;
     text-align: center;
 }
 
 section h2 {
-    font-family: 'Quicksand', sans-serif;
-    margin-bottom: 20px;
-    color: #a8200d;
     font-size: clamp(24px, 4vw, 32px);
+    color: #a8200d;
+    margin-bottom: 20px;
 }
 
 section p {
@@ -217,8 +203,23 @@ section p {
     }
 }
 
+/* Contact Form */
+#connect {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Manjari', sans-serif;
+}
 
-
+#connect h1 {
+    font-size: 2rem;
+    color: #a8200d;
+    margin: 20px auto;
+    text-align: center;
+}
 
 /* Input Fields */
 .input-box {
@@ -269,36 +270,6 @@ form {
     flex-direction: column;
 }
 
-/* General Styles */
-body {
-    font-family: 'Manjari', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color: #f5eed3;
-}
-
-body, html {
-    height: 100%;
-}
-
-/* Header */
-header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-header h1 {
-    font-family: 'Mauline', sans-serif;
-    font-size: clamp(3rem, 10vw, 8rem);
-    margin: 30px 0;
-    letter-spacing: 1px;
-    color: #a8200d;
-}
-
 /* Blue Section */
 .blue-section {
     background-color: #355d67;
@@ -309,23 +280,6 @@ header h1 {
     width: 90%;
     max-width: 2000px;
     margin: 0 auto;
-}
-
-/* Contact Form */
-#connect {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    max-width: 500px;
-    margin: 50px auto;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    font-family: 'Quicksand', sans-serif;
-}
-
-#connect h1 {
-    font-size: 2rem;
-    color: #a8200d;
-    margin-bottom: 20px;
 }
 
 /* Social Media Icons */
@@ -357,7 +311,7 @@ footer {
     color: white;
     padding: 5px 0;
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Manjari', sans-serif;
     width: 100%;
 }
 
@@ -366,22 +320,23 @@ footer {
     .carousel-container {
         width: 90%;
     }
-
-    /* Scrollbar Customization */
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #0303fc;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #fc0339;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #9dfc03;
-    }
 }
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0303fc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fc0339;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9dfc03;
+}
+
 
