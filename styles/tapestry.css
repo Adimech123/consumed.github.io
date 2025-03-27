@@ -35,6 +35,14 @@ header h1 {
     margin-bottom: 20px;
     letter-spacing: 1px;
     color: #a8200d;
+    font-size: 2rem;
+}
+
+h1.header {
+    text-align: left; /* Aligns the text to the left */
+    font-family: 'Manjari', sans-serif; /* Ensures the text uses the Manjari font */
+    color: #a8200d; /* Optional: Adjust the color if needed */
+    
 }
 
 
