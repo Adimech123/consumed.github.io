@@ -34,15 +34,14 @@ body {
     position: relative;
     transform-style: preserve-3d;
 }
-
 .section1::before {
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
-    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Field_in_K%C3%A4rk%C3%B6l%C3%A4.jpg/275px-Field_in_K%C3%A4rk%C3%B6l%C3%A4.jpg") top center;
+    background: url("assets/images/exp1.jpg") center center; /* Centered */
     background-size: cover;
-    transform: translateZ(-1px); scale(2.2);
+    transform: translateZ(-1px) scale(2.2);
     filter: blur(2px);
 }
 
