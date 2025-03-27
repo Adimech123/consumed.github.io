@@ -32,11 +32,25 @@ body {
     overflow-y: scroll;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manjari', sans-serif;
+}
+
+body {
+    background-color: #f5eed3;
+    perspective: 1px; /* Ensures the 3D effect */
+    transform-style: preserve-3d;
+}
+
 .section1, .section2 {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    text-align: center; /* Ensures inline text is centered */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -47,29 +61,40 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: url("/assets/images/exp1.jpg") center top; /* Positions the image higher up */
-    background-size: 150% 100%; /* Adjust this value to zoom in the image (150% will zoom in) */
-    transform: translateZ(-1px);
+    background: url("/assets/images/exp1.jpg") center top; /* Positions image closer to the top */
+    background-size: cover; /* Adjust to keep the image size correct */
+    background-position: center 10%; /* Adjust this to bring image closer */
+    transform: translateZ(0); /* Ensure it's not too far away */
+    transition: background-position 0.2s ease; /* Smooth transition */
 }
 
+.section1 {
+    position: relative;
+    z-index: 1;
+}
+
+.text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-family: 'Mauline', sans-serif;
+    font-size: 15vw;
+    color: white;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Keeps text in front of the image */
+}
 
 .section2 {
     background: #2e110f;
 }
 
-.text{
-    top:30%;
-    left:50%;
-    position: absolute;
-    font-family: 'Mauline', sans-serif;
-    font-size:15vw;
-    color: white;
-    transform: scale(1,1.1) translate(-50%, 10%);
+/* Ensure parallax effect */
+body, .section1 {
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-body, html {
-    height: 100%;
-}
+
 
 /* Header */
 header {
