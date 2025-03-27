@@ -38,6 +38,7 @@ body {
     width: 100%;
     min-height: 100vh;
     position: relative;
+    transform-style: preserve-3d;
 }
 
 .section1::before {
@@ -47,6 +48,8 @@ body {
     position: absolute;
     background: url("/assets/images/exp1.jpg") center top; /* Positions image closer to the top */
     background-size: cover;
+    transform: translateZ(-1px) scale(2.2);
+    filter: blur(2px);
 }
 .section2 {
     background: #2e110f;
