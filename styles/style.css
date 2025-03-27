@@ -50,7 +50,7 @@ body {
     background: url("../assets/images/exp1.jpg") center center; /* Centered */
     background-size: cover;
     transform: translateZ(-1px) scale(2.2);
-    filter: blur(2px);
+   
 }
 
 .section2 {
