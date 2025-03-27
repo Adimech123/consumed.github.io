@@ -7,6 +7,11 @@
     font-style: normal;
 }
 
+html{
+    height: 100vh;
+    overflow: hidden;
+}
+
 /* General Styles */
 body {
     font-family: 'Manjari', sans-serif;
@@ -16,13 +21,31 @@ body {
     width: 100%;
     height: 100%;
     background-color: #f5eed3;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
 }
 
-.section1, .section2{
-    width:100%;
-    min-height:100vh;
+.section1, .section2 {
+    width: 100%;
+    min-height: 100vh;
     position: relative;
+    transform-style: preserve-3d;
 }
+
+.section1::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Field_in_K%C3%A4rk%C3%B6l%C3%A4.jpg/275px-Field_in_K%C3%A4rk%C3%B6l%C3%A4.jpg") top center;
+    background-size: cover;
+    transform: translateZ(-1px); scale(2.2);
+    filter: blur(2px);
+}
+
 .section2 {
     background: #2e110f;
 }
