@@ -18,6 +18,24 @@ body {
     background-color: #f5eed3;
 }
 
+.section1, .section2{
+    width:100%;
+    min-height:100vh;
+    position: relative;
+}
+.section2 {
+    background: #2e110f;
+}
+.text{
+    top:30%
+    left:50%
+    position: absolute;
+    font-famil: Mauline;
+    font-size:15vw;
+    color: white;
+    transform: scale(1,1.1) translate(-50%, 10%);
+}
+
 body, html {
     height: 100%;
 }
