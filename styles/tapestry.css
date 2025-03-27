@@ -246,12 +246,13 @@ img {
     transform: scale(1.2);
 }
 
+/* Footer Sticks to Bottom */
 footer {
-    margin: 0;
-    background-color: #e0a03f; 
-    color: white; 
+    background-color: #e0a03f;
+    color: white;
     padding: 5px 0;
-    text-align: center; /* Center the text */
-    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-family: 'Manjari', sans-serif;
     width: 100%;
+    margin-top: auto; /* Pushes footer to bottom when content is small */
 }
