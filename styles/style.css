@@ -12,6 +12,13 @@ html{
     overflow: hidden;
 }
 
+
+.text {
+    font-size: 2rem;
+    color: white;
+}
+
+
 /* General Styles */
 body {
     font-family: 'Manjari', sans-serif;
@@ -27,12 +34,14 @@ body {
     overflow-y: scroll;
     
 }
-
 .section1, .section2 {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Ensures inline text is centered */
     width: 100%;
     min-height: 100vh;
     position: relative;
-    transform-style: preserve-3d;
 }
 .section1::before {
     content: "";
