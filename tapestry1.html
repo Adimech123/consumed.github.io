@@ -5,13 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consumed</title>
     <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="styles/tapestry.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles/tapestry.css"> <!-- Link to external CSS -->
     <script defer src="./scripts/audioScript.js"></script> <!-- Link to external JS -->
     <style>
         html {
             scroll-behavior: smooth;
         }
 
+        .btn {
+            display: inline-block;
+            background-color: #a8200d;
+            color: #f5eed3;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: normal;
+            text-decoration: none;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            margin-top: 50px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-right: 20px; /* Adds space between buttons */
+        }
+
+        .btn:hover {
+            background-color: #85180b;
+            transform: translateY(-5px);
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -47,22 +73,13 @@
             <p>This tapestry tells the story of a person nearly forgotten by history as a victim of 9/11.</p>
         </section>
 
-        
     </main>
 
-
-    
-<footer>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/amelie.dimech.9" target="_blank">
-            <img src="assets/images/facebook.png" alt="Facebook" class="social-icon">
-        </a>
-        <a href="https://www.instagram.com/amelie.dimech?igsh=b2xwbzE2a2h1ZTRm&utm_source=qr" target="_blank">
-            <img src="assets/images/insta.png" alt="Insta" class="social-icon">
-        </a>
+    <!-- Button Container with Back and Forward Buttons -->
+    <div class="btn-container">
+        <a href="previous-page.html" class="btn">Back</a>
+        <a href="next-page.html" class="btn">Forward</a>
     </div>
-</footer>
-    
+
 </body>
 </html>
-
