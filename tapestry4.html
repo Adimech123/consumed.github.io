@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/tapestry.css"> <!-- Link to external CSS -->
+    <script defer src="./scripts/audioScript.js"></script> <!-- Link to external JS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #a8200d;
+            color: #f5eed3;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: normal;
+            text-decoration: none;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            margin-top: 50px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-right: 20px; /* Adds space between buttons */
+        }
+
+        .btn:hover {
+            background-color: #85180b;
+            transform: translateY(-5px);
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tapestries.html">Tapestries</a></li>
+            <li><a href="sketches.html">Creations</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <a href="index.html">
+            <h1>Consumed</h1>
+        </a>
+    </header>
+
+    <h1 class="header">02. Echoes from Another Country</h1>    
+
+    <!-- Image with effect -->
+    <img id="tapestryImage" src="assets/images/exp2.jpg" alt="Tapestry 2">
+
+    <audio id="audio" loop>
+        <source src="assets/videos/music2.mp3" type="audio/mpeg">
+    </audio>
+
+    <main>
+        <p>CLICK ON THE IMAGE FOR AUDIO</p>
+
+        <section id="about">
+            <h1>About the Exhibition</h1>
+            <p>This tapestry tells the story of a person nearly forgotten by history as a victim of 9/11.</p>
+        </section>
+    </main>
+
+    <!-- Button Container with Back and Forward Buttons -->
+    <div class="btn-container">
+        <a href="tapestry3.html" class="btn">Back</a>
+        <a href="tapestry5.html" class="btn">Forward</a>
+    </div>
+
+</body>
+</html>
