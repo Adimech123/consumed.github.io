@@ -13,16 +13,14 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     height: 200vh;
     background-color: #f5eed3;
     perspective: 1px; /* Parallax effect enabled */
     transform-style: preserve-3d; 
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    overflow-y: scroll; /* Allow vertical scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
 } 
-
-
 
 /* Grain Effect */
 body::before {
@@ -38,7 +36,6 @@ body::before {
     mix-blend-mode: overlay;
 }
 
-/* Apply grain effect */
 #tapestries {
     background-color: #7b3224;
     padding: 5vw;
@@ -46,8 +43,8 @@ body::before {
     width: 90%;
     max-width: 1200px;
     text-align: center;
-    height: 1000px; 
-    position: relative; /* Ensure the grain effect stays over this section */
+    height: 1000px;
+    position: relative; /* Ensure it has a stacking context */
 }
 
 /* Grain overlay */
@@ -58,13 +55,13 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://www.transparenttextures.com/patterns/noisy.png'); /* Use a transparent noise texture */
-    opacity: 0.1; /* Adjust opacity for subtle effect */
-    pointer-events: none; /* Prevent interaction */
+    background-image: url('https://www.transparenttextures.com/patterns/noisy.png'); /* Ensure the image URL is correct */
+    opacity: 0.1; /* Increase opacity if too faint */
+    pointer-events: none; /* Prevent interaction with the overlay */
+    z-index: 1; /* Set a lower z-index to sit behind the content but above the background */
 }
 
-
-
+/* Section Styling */
 .section1, .section2 {
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -98,7 +95,6 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  position: absolute;
   background: url("/assets/images/exp1.jpg") center / cover no-repeat;
   transform: translateZ(-1px) scale(1.2); /* Creates zoom effect */
   will-change: transform;
@@ -110,23 +106,23 @@ body::before {
     background: #2e110f;
 }
 
+/* Text positioning fixed */
 .text {
     position: absolute;
-    top: 30%;
-    left: 50%;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the exact center */
     font-family: 'Mauline', sans-serif;
     font-size: 15vw;
     color: white;
-    transform: translate(-50%, -50%); /* Ensures the text is centered */
     z-index: 2; /* Keeps text in front of the image */
 }
 
 /* Ensure smooth scrolling */
 body, .section1 {
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto; /* Allow vertical scrolling */
 }
-
 
 /* Header */
 header {
@@ -448,7 +444,6 @@ form {
     transform: scale(1.2);
 }
 
-
 /* Ensure the entire page takes up at least the full viewport height */
 html, body {
     height: 100%;
@@ -473,15 +468,6 @@ footer {
     width: 100%;
 }
 
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .carousel-container {
-        width: 90%;
-    }
-}
-
 /* Scrollbar Customization */
 ::-webkit-scrollbar {
     width: 1rem;
@@ -496,9 +482,9 @@ footer {
 ::-webkit-scrollbar-thumb {
     background: #7b825b;
     border-radius: 100vw;
-    border: .25em solid hsl (120 75% 50%/ 1);
-
+    border: .25em solid hsl(120 75% 50% / 1);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: hsl(120 100% 10%/ 1);
+    background: hsl(120 100% 10% / 1);
+}
