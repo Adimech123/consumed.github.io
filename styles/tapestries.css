@@ -16,7 +16,7 @@ body {
     min-height: 100vh; /* Ensures full viewport height */
     
     /* Solid background color */
-    background-color: #f5eed3;
+    background-color: #7b3224;
 
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ header h1 {
     font-size: 10vw;
     margin: 30px 0;
     letter-spacing: 1px;
-    color: #a8200d;
+    color: #f5eed3;
 }
 
 /* Navbar */
@@ -85,7 +85,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #a8200d;
+    color: #f5eed3;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -113,7 +113,7 @@ section {
 section h2 {
     font-family: 'Quicksand', sans-serif;
     margin-bottom: 20px;
-    color: #a8200d;
+    color: #f5eed3;
     font-size: clamp(24px, 4vw, 32px);
 }
 
@@ -233,7 +233,7 @@ section p {
 }
 
 .social-icons a {
-    color: #a8200d;
+    color: #f5eed3;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -249,7 +249,7 @@ section p {
 /* Footer */
 footer {
     margin: 0;
-    background-color: #e0a03f;
+    background-color: #a8200d;
     color: white;
     padding: 5px 0;
     text-align: center;
