@@ -38,6 +38,32 @@ body::before {
     mix-blend-mode: overlay;
 }
 
+/* Apply grain effect */
+#tapestries {
+    background-color: #7b3224;
+    padding: 5vw;
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    height: 1000px; 
+    position: relative; /* Ensure the grain effect stays over this section */
+}
+
+/* Grain overlay */
+#tapestries::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/noisy.png'); /* Use a transparent noise texture */
+    opacity: 0.1; /* Adjust opacity for subtle effect */
+    pointer-events: none; /* Prevent interaction */
+}
+
+
 
 .section1, .section2 {
     display: flex;
