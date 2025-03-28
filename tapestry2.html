@@ -12,7 +12,7 @@
             scroll-behavior: smooth;
         }
 
-        .btn-home {
+        .btn {
             display: inline-block;
             background-color: #a8200d;
             color: #f5eed3;
@@ -25,11 +25,18 @@
             margin-top: 50px;
             text-align: center;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-right: 20px; /* Adds space between buttons */
         }
 
-        .btn-home:hover {
+        .btn:hover {
             background-color: #85180b;
             transform: translateY(-5px);
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -67,12 +74,11 @@
         </section>
     </main>
 
-    <!-- Button to go to the home page -->
-    <footer>
-        <a href="tapestry1.html" class="btn-home">next tapestry</a>
-    </footer>
+    <!-- Button Container with Back and Forward Buttons -->
+    <div class="btn-container">
+        <a href="tapestry1.html" class="btn">Back</a>
+        <a href="tapestry3.html" class="btn">Forward</a>
+    </div>
 
 </body>
 </html>
-
-
