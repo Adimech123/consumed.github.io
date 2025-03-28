@@ -276,6 +276,19 @@ section p {
     background-image: url("../assets/images/exp2.jpg");
 }
 
+#tapestry3 {
+    background-image: url("../assets/images/exp3.jpg");
+}
+
+#tapestry4 {
+    background-image: url("../assets/images/exp4.jpg");
+}
+
+#tapestry5 {
+    background-image: url("../assets/images/exp2.jpg");
+}
+
+
 .tapestryContainer {
     width: 100%;
     height: 100%;
