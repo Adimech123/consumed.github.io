@@ -427,17 +427,17 @@ footer {
 
 /* Scrollbar Customization */
 ::-webkit-scrollbar {
-    width: 2rem;
+    width: 1rem;
 }
 
 ::-webkit-scrollbar-track {
-    background: hsl(120 75% 50%/ 1);
+    background:#9da676;
     border-radius: 100vw;
     margin-block: .5em;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: hsl(120 100% 20%/ 1);
+    background: #7b825b;
     border-radius: 100vw;
     border: .25em solid hsl (120 75% 50%/ 1);
 
