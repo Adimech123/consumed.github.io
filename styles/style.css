@@ -422,6 +422,20 @@ form {
     transform: scale(1.2);
 }
 
+
+/* Ensure the entire page takes up at least the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should take up all available space */
+main {
+    flex: 1;
+}
+
 /* Footer Sticks to Bottom */
 footer {
     background-color: #e0a03f;
@@ -430,8 +444,10 @@ footer {
     text-align: center;
     font-family: 'Manjari', sans-serif;
     width: 100%;
-    margin-top: auto; /* Pushes footer to bottom when content is small */
 }
+
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
