@@ -462,16 +462,16 @@ main {
     flex: 1;
 }
 
-/* Footer Sticks to Bottom */
+/* Footer */
 footer {
-    background-color: #e0a03f;
+    margin: 0;
+    background-color: #a8200d;
     color: white;
     padding: 5px 0;
     text-align: center;
     font-family: 'Manjari', sans-serif;
     width: 100%;
 }
-
 
 
 
