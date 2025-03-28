@@ -16,8 +16,24 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center -10%;
-    background-color: #f5eed3;
+    background-color: #7b3224;
 }
+
+/* Grain Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); 
+    opacity: 0.9;
+    mix-blend-mode: overlay;
+}
+
+
 
 /* Header */
 header {
@@ -34,14 +50,14 @@ header h1 {
     margin-top: 50px;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    color: #a8200d;
+    color: #f5eed3;
     font-size: 2rem;
 }
 
 h1.header {
     text-align: left; /* Aligns the text to the left */
     font-family: 'Manjari', sans-serif; /* Ensures the text uses the Manjari font */
-    color: #a8200d; /* Optional: Adjust the color if needed */
+    color: #f5eed3;
     
 }
 
@@ -55,7 +71,7 @@ header a {
 /* Navbar */
 nav {
     width: 100%;
-    background-color: #f5eed3;
+    background-color: none;
     position: sticky;
     top: 0;
     padding: 10px 0;
@@ -78,7 +94,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #a8200d;
+    color: #f5eed3;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -106,7 +122,7 @@ section h2 {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.8em;
     margin-bottom: 15px;
-    color: #a8200d;
+    color: #f5eed3;
 }
 
 p {
@@ -248,7 +264,7 @@ img {
 
 /* Footer Sticks to Bottom */
 footer {
-    background-color: #e0a03f;
+    background-color: #f5eed3;
     color: white;
     padding: 5px 0;
     text-align: center;
