@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/tapestry.css"> <!-- Link to external CSS -->
+    <title>Consumed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styles/tapestry.css"> <!-- Link to external CSS -->
     <script defer src="./scripts/audioScript.js"></script> <!-- Link to external JS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <h1>Consumed</h1>
-        </a>
-    </header>
-
-    <nav>
+    
+    <nav aria-label="Main Navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="tapestries.html">Tapestries</a></li>
@@ -21,10 +24,17 @@
         </ul>
     </nav>
 
+      <header>
+        <a href="index.html">
+            <h1>Consumed</h1>
+        </a>
+    </header>
+
+<h1 class="header">02. Echoes from Another Country</h1>    
+
     <!-- Image with effect -->
     <img id="tapestryImage" src="assets/images/exp2.jpg" alt="Tapestry 2">
 
-    <!-- Audio element -->
     <audio id="audio" loop>
         <source src="assets/videos/music2.mp3" type="audio/mpeg">
     </audio>
@@ -33,26 +43,11 @@
         <p>CLICK ON THE IMAGE FOR AUDIO</p>
 
         <section id="about">
-            <h2>About the Tapestry</h2>
-            <p>This tapestry tells the story of a person and an argument that started the process of their parents' divorce.</p>
+            <h1>About the Exhibition</h1>
+            <p>This tapestry tells the story of a person nearly forgotten by history as a victim of 9/11.</p>
         </section>
 
-        <section id="projects">
-            <h2>Creator</h2>
-            <p>Amelie Dimech</p>
-        </section>
+        
     </main>
 
-    <footer>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/amelie.dimech.9" target="_blank">
-            <img src="assets/images/facebook.png" alt="Facebook" class="social-icon">
-        </a>
-        <a href="https://www.instagram.com/amelie.dimech?igsh=b2xwbzE2a2h1ZTRm&utm_source=qr" target="_blank">
-            <img src="assets/images/insta.png" alt="Insta" class="social-icon">
-        </a>
-    </div>
-</footer>
-</body>
-</html>
 
