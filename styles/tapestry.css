@@ -52,6 +52,7 @@ header h1 {
     letter-spacing: 1px;
     color: #f5eed3;
     font-size: 2rem;
+    color: #f5eed3;
 }
 
 h1.header {
@@ -131,6 +132,7 @@ p {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    color: #f5eed3;
 }
 
 /* Responsive Images */
