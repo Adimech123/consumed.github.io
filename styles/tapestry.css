@@ -64,7 +64,7 @@ h1.header {
 
 header a {
     text-decoration: none; /* Removes underline */
-    color: inherit; /* Keeps the default text color */
+    color: #f5eed3;
 }
 
 
