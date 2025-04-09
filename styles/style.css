@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Mauline';
+    src: url('../assets/fonts/Mauline.woff2') format('woff2'),
+         url('../assets/fonts/Mauline.woff') format('woff'),
+         url('../assets/fonts/Mauline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* General Styles */
 body {
     font-family: 'Manjari', sans-serif;
@@ -11,7 +20,7 @@ body {
     transform-style: preserve-3d; 
     overflow-x: hidden; /* Prevent horizontal scrolling */
     overflow-y: auto; /* Allow vertical scrolling */
-}
+} 
 
 /* Grain Effect */
 body::before {
@@ -27,25 +36,29 @@ body::before {
     mix-blend-mode: overlay;
 }
 
-/* Parallax Wrapper */
-.parallax-wrapper {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    perspective: 1px; /* Creates depth effect */
+#tapestries {
+    background-color: #7b3224;
+    padding: 5vw;
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    height: 1000px;
+    position: relative; /* Ensure it has a stacking context */
 }
 
-.parallax-wrapper .parallax-background {
+/* Grain overlay */
+#tapestries::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/assets/images/exp1.jpg') center / cover no-repeat;
-    transform: translateZ(-1px) scale(1.2); /* Creates zoom effect */
-    will-change: transform;
-    filter: blur(2px);
-    transition: background-position 0.2s ease;
+    background-image: url('https://www.transparenttextures.com/patterns/noisy.png'); /* Ensure the image URL is correct */
+    opacity: 0.1; /* Increase opacity if too faint */
+    pointer-events: none; /* Prevent interaction with the overlay */
+    z-index: 1; /* Set a lower z-index to sit behind the content but above the background */
 }
 
 /* Section Styling */
@@ -60,6 +73,20 @@ body::before {
     transform-style: preserve-3d;
 }
 
+/* Wrapper to apply perspective */
+.parallax-wrapper {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  perspective: 1px; /* Creates depth effect */
+}
+
+.section1 {
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
 /* Parallax background with zoom effect */
 .section1::before {
   content: "";
@@ -72,10 +99,9 @@ body::before {
   transform: translateZ(-1px) scale(1.2); /* Creates zoom effect */
   will-change: transform;
   filter: blur(2px);
-  transition: background-position 0.2s ease;
+    transition: background-position 0.2s ease;
 }
 
-/* Section Background */
 .section2 {
     background: #2e110f;
 }
@@ -116,6 +142,24 @@ header h1 {
     color: #a8200d;
 }
 
+.carousel-container {
+    width: 90%;
+}
+
+/* Button */
+
+/* Section Styling */
+#explore-tapestries {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#explore-tapestries p {
+    font-size: 1.2rem;
+    color: #a8200d;
+    margin-bottom: 20px;
+}
+
 /* Button Styling */
 .btn {
     display: inline-block;
@@ -154,6 +198,33 @@ nav {
     transition: top 0.3s ease-in-out;
 }
 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #a8200d;
+    text-decoration: none;
+    font-family: 'Manjari', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 /* Tapestries */
 section {
     font-family: 'Manjari', sans-serif;
@@ -164,14 +235,68 @@ section {
     text-align: center;
 }
 
-/* Tapestry Layout */
+#tapestries .header {
+    text-align: left;
+}
+
+#tapestries h1 {
+    font-family: 'Manjari', sans-serif;
+    font-size: 2rem;
+    color: #f5eed3;
+    margin: 20px auto;
+    text-align: right;
+}
+
+section h2 {
+    font-size: clamp(24px, 4vw, 32px);
+    color: #a8200d;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-top: 20px;
     margin-top: 60px;
+}
+
+#tapestry1 {
+    background-image: url("../assets/images/exp1.jpg");
+}
+
+#tapestry2 {
+    background-image: url("../assets/images/exp2.jpg");
+}
+
+#tapestry3 {
+    background-image: url("../assets/images/exp3.jpg");
+}
+
+#tapestry4 {
+    background-image: url("../assets/images/exp4.jpg");
+}
+
+#tapestry5 {
+    background-image: url("../assets/images/exp2.jpg");
+}
+
+
+.tapestryContainer {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1px;
+    color: #a8200d;
 }
 
 .gallery > div {
@@ -195,6 +320,39 @@ section {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.contentContainer {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    border-radius: 1px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentContainer h1,
+.contentContainer h2 {
+    width: 100%;
+    margin: auto;
+}
+
+.contentContainer button {
+    width: 75%;
+    height: 40px;
+    background-color: #a8200d;
+    color: white;
+    margin: auto;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contentContainer button:hover {
+    background-color: #85180b;
+}
+
 /* Desktop Styles */
 @media (min-width: 1024px) {
     .gallery {
@@ -212,6 +370,71 @@ section {
     }
 }
 
+/* Contact Form */
+#connect {
+    font-family: 'Manjari', sans-serif;
+}
+
+#connect .header {
+    text-align: right;
+}
+
+#connect h1 {
+    font-size: 2rem;
+    color: #a8200d;
+    margin: 20px auto;
+    text-align: right;
+}
+
+/* Input Fields */
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-box label {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+.input-box textarea {
+    resize: vertical;
+}
+
+/* Buttons */
+button {
+    background-color: #a8200d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.3s ease-in-out;
+    margin: auto;
+}
+
+button:hover {
+    background-color: #850e08;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Social Media Icons */
 .social-icons {
     display: flex;
@@ -227,10 +450,24 @@ section {
 
 .social-icons a img {
     width: 32px;
+    margin-top: -16px;
 }
 
 .social-icons a:hover {
     transform: scale(1.2);
+}
+
+/* Ensure the entire page takes up at least the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should take up all available space */
+main {
+    flex: 1;
 }
 
 /* Footer */
