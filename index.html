@@ -24,13 +24,94 @@
             height: 2300px; 
         }
 
+        /* Parallax Effect */
         .parallax {
+            position: relative;
             background-image: url('assets/images/tapestry1.jpg');
-            height: 100vh; 
-            background-attachment: fixed;
+            height: 100vh; /* Full viewport height */
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            will-change: transform; /* Performance improvement */
+            z-index: 0; /* Ensures the parallax is below other content */
+        }
+
+        /* To allow parallax scrolling */
+        .parallax-content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Section Styling */
+        .parallax-section {
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .parallax-section .parallax {
+            transform: translateZ(-1px) scale(1.5);
+        }
+
+        /* Additional Content Styling */
+        .parallax-content h2 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .parallax-content p {
+            font-size: 1.2rem;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        /* Other Sections */
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: #a8200d;
+            color: #f5eed3;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: normal;
+            text-decoration: none;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #85180b;
+            transform: translateY(-5px);
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #a8200d;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons a img {
+            width: 32px;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
         }
     </style>
 </head>
@@ -52,13 +133,28 @@
         <a href="tapestries.html" class="btn">Explore Tapestries</a>
     </section>
 
-    <div class="parallax"></div>
+    <!-- Parallax Effect with Content -->
+    <div class="parallax-section">
+        <div class="parallax"></div>
+        <div class="parallax-content">
+            <h2>Explore the World of Tapestries</h2>
+            <p>Scroll down to see more about the tapestries, each telling a unique story.</p>
+        </div>
+    </div>
 
+    <!-- Content after Parallax Effect -->
     <div style="height:1000px;background-color:red;font-size:36px">
         Scroll Up and Down this page to see the parallax scrolling effect.
     </div>
 
-    <div class="parallax"></div>
+    <!-- Another Parallax Section -->
+    <div class="parallax-section">
+        <div class="parallax"></div>
+        <div class="parallax-content">
+            <h2>Another Tapestry Experience</h2>
+            <p>This section highlights more about the creation of the tapestries.</p>
+        </div>
+    </div>
 
     <main>
         <section id="about">
