@@ -481,13 +481,13 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-    background:#9da676;
+    background:#a8200d;
     border-radius: 100vw;
     margin-block: .5em;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #7b825b;
+    background: #b55f53;
     border-radius: 100vw;
     border: .25em solid hsl(120 75% 50% / 1);
 }
