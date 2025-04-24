@@ -72,11 +72,11 @@ header a {
 
 /* Navbar */
 nav {
-    width: 100%;
-    background-color: none;
+     width: 100%;
+    background-color: #f5eed3;
+    padding: 10px 0;
     position: sticky;
     top: 0;
-    padding: 10px 0;
     display: flex;
     justify-content: center; /* Centers navbar items */
 }
@@ -96,7 +96,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f5eed3;
+    color: #a8200d;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
