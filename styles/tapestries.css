@@ -49,7 +49,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: inherit;
+    color: #f5eed3;
 }
 
 header h1 {
@@ -140,6 +140,18 @@ section p {
 
 #tapestry2 {
     background-image: url("../assets/images/exp2.jpg");
+}
+
+#tapestry3 {
+    background-image: url("../assets/images/exp3.jpg");
+}
+
+#tapestry4 {
+    background-image: url("../assets/images/exp4.jpg");
+}
+
+#tapestry5 {
+    background-image: url("../assets/images/exp1.jpg");
 }
 
 .tapestryContainer {
@@ -250,7 +262,7 @@ section p {
 /* Footer */
 footer {
     margin: 0;
-    background-color: #a8200d;
+    background-color: #f5eed3;
     color: white;
     padding: 5px 0;
     text-align: center;
