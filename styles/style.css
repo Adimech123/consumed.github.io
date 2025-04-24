@@ -188,7 +188,6 @@ header h1 {
 /* Navbar (Always Visible) */
 nav {
     width: 100%;
-    background-color: #f5eed3;
     padding: 10px 0;
     position: fixed;
     top: 0;
