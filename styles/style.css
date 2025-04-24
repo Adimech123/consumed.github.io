@@ -117,8 +117,19 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; /* Ensures full height */
-    min-height: 250px; /* Adjust to give more space */
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header h1 {
+    font-family: 'Mauline', serif;
+    font-size: 10vw;
+    margin: 30px 0;
+    letter-spacing: 1px;
+    color: #f5eed3;
 }
 
 header h1 {
