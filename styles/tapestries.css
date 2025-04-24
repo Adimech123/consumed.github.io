@@ -257,3 +257,23 @@ footer {
     font-family: 'Quicksand', sans-serif;
     width: 100%;
 }
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #d47e72;
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a8200d;
+    border-radius: 100vw;
+    border: #f72b0f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(120 100% 10% / 1);
+}
