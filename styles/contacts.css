@@ -46,7 +46,7 @@ header h1 {
 /* Navbar */
 nav {
      width: 100%;
-    background-color: #f5eed3;
+    background-color: none;
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -81,9 +81,10 @@ nav ul li a:hover {
 }
 
 /* Highlighted menu items */
-nav ul li a[href="contacts.html"]{
+nav ul li a[href="contacts.html"] {
     font-weight: bold;
 }
+
 
 section {
     font-family: 'Quicksand', sans-serif;
