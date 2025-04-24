@@ -33,42 +33,25 @@ body::before {
     mix-blend-mode: overlay;
 }
 
-
-
 /* Header */
 header {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; /* Ensures full height */
-    min-height: 250px; /* Adjust to give more space */
+}
+
+header a {
+    text-decoration: none;
     color: #f5eed3;
 }
 
 header h1 {
-    font-family: 'Mauline', sans-serif;
-    font-size: 68px !important;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    font-family: 'Mauline', serif;
+    font-size: 10vw;
+    margin: 30px 0;
     letter-spacing: 1px;
     color: #f5eed3;
-    font-size: 2rem;
-    color: #f5eed3;
 }
-
-h1.header {
-    text-align: left; /* Aligns the text to the left */
-    font-family: 'Manjari', sans-serif; /* Ensures the text uses the Manjari font */
-    color: #f5eed3;
-    
-}
-
-
-header a {
-    text-decoration: none; /* Removes underline */
-    color: #f5eed3;
-}
-
 
 /* Navbar */
 nav {
@@ -111,6 +94,7 @@ nav ul li a:hover {
 nav ul li a[href="tapestries.html"] {
     font-weight: bold;
 }
+
 
 
 section {
