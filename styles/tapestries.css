@@ -49,7 +49,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: inherit;
+    color: #f5eed3;
 }
 
 header h1 {
@@ -63,7 +63,7 @@ header h1 {
 /* Navbar */
 nav {
      width: 100%;
-    background-color: #f5eed3;
+    background-color: none;
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -86,7 +86,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #a8200d;
+    color: #f5eed3;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -140,6 +140,18 @@ section p {
 
 #tapestry2 {
     background-image: url("../assets/images/exp2.jpg");
+}
+
+#tapestry3 {
+    background-image: url("../assets/images/exp3.jpg");
+}
+
+#tapestry4 {
+    background-image: url("../assets/images/exp4.jpg");
+}
+
+#tapestry5 {
+    background-image: url("../assets/images/exp1.jpg");
 }
 
 .tapestryContainer {
@@ -250,10 +262,30 @@ section p {
 /* Footer */
 footer {
     margin: 0;
-    background-color: #a8200d;
+    background-color: #f5eed3;
     color: white;
     padding: 5px 0;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     width: 100%;
+}
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5eed3;
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a8200d;
+    border-radius: 100vw;
+    border: #f72b0f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(120 100% 10% / 1);
 }
