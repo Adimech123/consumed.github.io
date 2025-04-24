@@ -10,7 +10,6 @@
     
   </head>
   <body>
-
     
     <header>
       <a href="index.html">
@@ -26,31 +25,42 @@
         </ul>
     </nav>
 
+    <section id="about-artist">
+        <div class="artist-container">
+            <h2 class="header">About the Artist</h2>
+            <div class="artist-content">
+                <div class="artist-image">
+                    <img src="assets/images/artist-profile.jpg" alt="Amelie Dimech" class="profile-image">
+                </div>
+                <div class="artist-bio">
+                    <p>Amelie Dimech is a textile artist specializing in contemporary tapestries that explore themes of consumption, memory, and material culture. Her work has been exhibited in galleries across Europe and North America.</p>
+                    <p>Drawing inspiration from personal experiences and cultural observations, Amelie creates intricate pieces that invite viewers to reflect on their relationship with objects and consumption patterns in modern society.</p>
+                    <p>Amelie holds a Master of Fine Arts degree and has been creating her distinctive tapestries for over a decade. She conducts workshops and speaking engagements on textile art and sustainable creative practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section id="connect">
         <div>
         <h1 class="header">Get In Touch</h1>
-
         <form action="submit_form.php" method="POST">
             <div class="input-box">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
             </div>
-
             <div class="input-box">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
             </div>
-
             <div class="input-box">
                 <label for="message">Share your memories or ask any question</label>
                 <textarea id="message" name="message" placeholder="What's on your mind?" rows="4" required></textarea>
             </div>
-
             <button type="submit">Submit</button>
         </form>
     </div>
     </section>
-
 <footer>
     <div class="social-icons">
         <a href="https://www.facebook.com/amelie.dimech.9" target="_blank">
@@ -61,6 +71,5 @@
         </a>
     </div>
 </footer>
-
   </body>
 </html>
