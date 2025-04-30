@@ -17,44 +17,7 @@ body {
     background-size: contain;
     background-position: center -10%;
     background-color: #7b3224 !important;
-    background-image: url('https://www.transparenttextures.com/patterns/noisy.png');
-}
-
-nav {
-    width: 100%;
-    padding: 10px 0;
-    z-index: 1000;
-    transition: top 0.3s ease-in-out;
-    backdrop-filter: blur(20px);
-    background-color: rgba(245, 238, 211, 0.2);
-    background-image: url('https://www.transparenttextures.com/patterns/noisy.png');
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    color: #a8200d;
-    text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    gap: 30px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
+    background-image: url('../assets/patterns/noisy.png');
 }
 
 /* Header */
@@ -79,13 +42,17 @@ header h1 {
 
 /* Navbar */
 nav {
-     width: 100%;
-    background-color: none;
+    width: 100%;
     padding: 10px 0;
     position: sticky;
     top: 0;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+    backdrop-filter: blur(20px);
+    background-color: rgba(245, 238, 211, 0.2);
+    background-image: url('../assets/patterns/noisy.png');
     display: flex;
-    justify-content: center; /* Centers navbar items */
+    justify-content: center;
 }
 
 nav ul {
@@ -117,9 +84,8 @@ nav ul li a:hover {
 /* Highlighted menu items */
 nav ul li a[href="tapestries.html"] {
     font-weight: bold;
+    color: #a8200d;
 }
-
-
 
 section {
     padding: 20px;
@@ -161,14 +127,6 @@ img {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        gap: 30px; /* Reduce gap slightly for smaller screens */
-    }
-}
-
-
-
 /* Carousel Container */
 .carousel-container {
     position: relative;
@@ -191,12 +149,11 @@ img {
     border-radius: 10px;
 }
 
-
 /* Button Styling */
 .btn {
     display: inline-block;
     background-color: #fac9c3;
-    color: #f5eed3 !important;
+    color: #a8200d !important; /* Fixed color contrast issue */
     padding: 15px 30px;
     font-size: 1.1rem;
     font-weight: normal;
@@ -209,9 +166,15 @@ img {
 /* Hover Effect */
 .btn:hover {
     background-color: #85180b;
-    transform: scale(1.1, 1.1);
+    color: #f5eed3 !important;
+    transform: scale(1.1);
 }
 
+/* Active State */
+.btn:active {
+    background-color: #750d07;
+    transform: translateY(0);
+}
 
 .prev { left: 10px; }
 .next { right: 10px; }
@@ -220,27 +183,10 @@ img {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-/* Active State */
-.btn:active {
-    background-color: #750d07;
-    transform: translateY(0);
-}
-
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .carousel-container {
-        width: 90%;
-    }
-}
-
 /* Centered Gallery Styling */
 .gallery {
     display: flex;
-    flex-wrap: wrap; /* Allows images to stack on smaller screens */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
@@ -249,7 +195,7 @@ img {
 .gallery img {
     display: block;
     width: 100%;
-    max-width: 300px; /* Ensures images don't overflow */
+    max-width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
 }
@@ -257,16 +203,6 @@ img {
 .gallery img:hover {
     transform: scale(1.05);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Mobile Styles */
-@media (max-width: 600px) {
-    .gallery {
-        gap: 10px;
-    }
-    .gallery img {
-        max-width: 90%; /* Adjust for smaller screens */
-    }
 }
 
 /* Social Media Icons */
@@ -294,14 +230,15 @@ img {
 /* Footer Sticks to Bottom */
 footer {
     background-color: #f5eed3;
-    color: white;
+    color: #a8200d; /* Fixed missing color */
     padding: 5px 0;
     text-align: center;
     font-family: 'Manjari', sans-serif;
     width: 100%;
-    margin-top: auto; /* Pushes footer to bottom when content is small */
+    margin-top: auto;
 }
-/* Scrollbar Customization */
+
+/* Scrollbar Customization with cross-browser support */
 ::-webkit-scrollbar {
     width: 1rem;
 }
@@ -315,9 +252,40 @@ footer {
 ::-webkit-scrollbar-thumb {
     background: #a8200d;
     border-radius: 100vw;
-    border: #f72b0f;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: hsl(120 100% 10% / 1);
+    background: #750d07;
+}
+
+/* Standard scrollbar properties for Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #a8200d #f5eed3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 15px;
+    }
+    
+    .carousel-container {
+        width: 90%;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+    
+    .gallery {
+        gap: 10px;
+    }
+    
+    .gallery img {
+        max-width: 90%;
+    }
 }
