@@ -238,13 +238,13 @@ footer {
     margin-top: auto;
 }
 
-/* Scrollbar Customization with cross-browser support */
+/* Scrollbar Customization */
 ::-webkit-scrollbar {
     width: 1rem;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f5eed3;
+    background: #d47e72;
     border-radius: 100vw;
     margin-block: .5em;
 }
@@ -252,17 +252,14 @@ footer {
 ::-webkit-scrollbar-thumb {
     background: #a8200d;
     border-radius: 100vw;
+    border: #f72b0f;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #750d07;
+    background: hsl(120 100% 10% / 1);
 }
 
-/* Standard scrollbar properties for Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #a8200d #f5eed3;
-}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
