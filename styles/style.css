@@ -418,7 +418,17 @@ footer {
 /* Mobile fallback: disable fixed background */
 @media (min-width: 1024px) {
     .gallery{
-        grid-template-columns: auto auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery > div{
+        flex: 1 1 calc(33%)
+    }
+
+    .gallery > div:last-child{
+        flex: 0.4 0.4 calc(33%)
     }
 
     #connect > div{
