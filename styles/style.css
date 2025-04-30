@@ -425,7 +425,6 @@ footer {
 
     .gallery > div{
         flex: 1 1 calc(33%);
-        padding: 15px;
     }
 
     .gallery > div:last-child{
