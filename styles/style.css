@@ -424,11 +424,12 @@ footer {
     }
 
     .gallery > div{
-        flex: 1 1 calc(33%)
+        flex: 1 1 calc(33%);
+        padding: 15px;
     }
 
     .gallery > div:last-child{
-        flex: 0.4 0.4 calc(33%)
+        flex: 0.4 0.4 calc(33%);
     }
 
     #connect > div{
