@@ -14,12 +14,6 @@ body {
     background-color: #f5eed3;
 }
 
-.profile-image {
-    max-width: 90px;
-    height: auto;
-}
-
-
 /* Header */
 header {
     width: 100%;
