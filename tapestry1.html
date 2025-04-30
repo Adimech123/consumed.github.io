@@ -3,85 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consumed</title>
+    <meta name="description" content="Consumed - Poisoned Egg Tapestry Exhibition">
+    <title>Consumed - Poisoned Egg</title>
     <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/tapestry.css"> <!-- Link to external CSS -->
-    <script defer src="./scripts/audioScript.js"></script> <!-- Link to external JS -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #a8200d;
-            color: #f5eed3;
-            padding: 15px 30px;
-            font-size: 1.1rem;
-            font-weight: normal;
-            text-decoration: none;
-            border-radius: 5px;
-            letter-spacing: 1px;
-            margin-top: 50px;
-            text-align: center;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            margin-right: 20px; /* Adds space between buttons */
-        }
-
-        .btn:hover {
-            background-color: #85180b;
-            transform: translateY(-5px);
-        }
-
-        .btn-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/tapestry.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script defer src="./scripts/audioScript.js"></script>
 </head>
 <body>
-        <header>
-      <a href="index.html">
-        <h1>Consumed</h1>
-      </a>
+    <header>
+        <a href="index.html">
+            <h1>Consumed</h1>
+        </a>
     </header>
-
-    <nav>
-      <ul>
-          <li><a href="index.html">Home</a></li>
+    
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="tapestries.html">Tapestries</a></li>
             <li><a href="contacts.html">Contacts</a></li>
-      </ul>
+        </ul>
     </nav>
-
-
-<h1 class="header">01. Poisoned Egg</h1>    
-
-    <!-- Image with effect -->
-    <img id="tapestryImage" src="assets/images/exp1.jpg" alt="Tapestry 1">
-
-    <audio id="audio" loop>
-        <source src="assets/videos/music1.mp3" type="audio/mpeg">
-    </audio>
-
+    
     <main>
-        <p>CLICK ON THE IMAGE FOR AUDIO</p>
-
-        <section id="about">
-            <p>About the Exhibition</p>
-            <p>The interviewee shared a powerful and deeply emotional memory from their childhood, centered around the last major fight between their parents before their separation. They described a vivid scene that took place during a Sunday lunch, when a seemingly minor incident—an egg wrapped in foil—escalated into a violent altercation. At just ten years old, they recalled feelings of intense fear, chaos, and the instinct to protect their brother and mother. Their father’s aggressive behavior and the traumatic events that unfolded, including being locked in a room and witnessing physical violence, left a lasting impression. Now, a decade later, the interviewee reflects on the memory with a mix of anger and acceptance, recognizing how the experience forced them to mature quickly and shaped their view of relationships and trust. While they’ve worked through much of the trauma in therapy, the memory remains vivid and unresolved, symbolizing a difficult chapter that continues to influence their life and emotional resilience.</p>
+        <h2 class="tapestry-title">01. Poisoned Egg</h2>
+        
+        <figure class="tapestry-figure">
+            <img id="tapestryImage" src="assets/images/exp1.jpg" alt="Tapestry artwork depicting Poisoned Egg" tabindex="0">
+            <figcaption>
+                <span class="audio-instruction">Click or tap image to play/pause audio accompaniment</span>
+                <button id="audioToggle" class="audio-button" aria-label="Toggle audio playback">
+                    <span class="audio-icon">🔊</span>
+                </button>
+            </figcaption>
+        </figure>
+        
+        <audio id="audio" preload="metadata" aria-label="Audio accompaniment for Poisoned Egg tapestry">
+            <source src="assets/videos/music1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <section id="about" class="tapestry-description">
+            <h3>About the Exhibition</h3>
+            <p>The interviewee shared a powerful and deeply emotional memory from their childhood, centered around the last major fight between their parents before their separation. They described a vivid scene that took place during a Sunday lunch, when a seemingly minor incident—an egg wrapped in foil—escalated into a violent altercation.</p>
+            
+            <p>At just ten years old, they recalled feelings of intense fear, chaos, and the instinct to protect their brother and mother. Their father's aggressive behavior and the traumatic events that unfolded, including being locked in a room and witnessing physical violence, left a lasting impression.</p>
+            
+            <p>Now, a decade later, the interviewee reflects on the memory with a mix of anger and acceptance, recognizing how the experience forced them to mature quickly and shaped their view of relationships and trust. While they've worked through much of the trauma in therapy, the memory remains vivid and unresolved, symbolizing a difficult chapter that continues to influence their life and emotional resilience.</p>
         </section>
-
+        
+        <nav class="tapestry-navigation" aria-label="Tapestry navigation">
+            <div class="btn-container">
+                <a href="tapestry5.html" class="btn" aria-label="Previous tapestry">Previous</a>
+                <a href="tapestry2.html" class="btn" aria-label="Next tapestry">Next</a>
+            </div>
+        </nav>
     </main>
-
-    <!-- Button Container with Back and Forward Buttons -->
-    <div class="btn-container">
-        <a href="tapestry5.html" class="btn">Back</a>
-        <a href="tapestry2.html" class="btn">Forward</a>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+    <footer>
+        <p>&copy; 2025 Consumed Exhibition. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
