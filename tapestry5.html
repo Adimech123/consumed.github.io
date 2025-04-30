@@ -12,51 +12,55 @@
             scroll-behavior: smooth;
         }
 
+ 
         .btn {
             display: inline-block;
             background-color: #a8200d;
             color: #f5eed3;
             padding: 15px 30px;
-            font-size: 1.1rem;
-            font-weight: normal;
+            font-size: 1.2rem;
+            font-weight: bold;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             letter-spacing: 1px;
             margin-top: 50px;
             text-align: center;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            margin-right: 20px; /* Adds space between buttons */
+            transition: all 0.3s ease;
+            margin-right: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border: 2px solid #f5eed3;
         }
-
+        
         .btn:hover {
-            background-color: #85180b;
+            background-color: #f5eed3;
+            color: #a8200d;
             transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
-
+        
         .btn-container {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin: 40px 0;
+            padding: 10px;
         }
+        
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    </head>
+</head>
 <body>
-    
-    <nav class="navbar sticky-top" aria-label="Main Navigation">
-        <ul>
-              <li><a href="index.html">Home</a></li>
+        <header>
+      <a href="index.html">
+        <h1>Consumed</h1>
+      </a>
+    </header>
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
             <li><a href="tapestries.html">Tapestries</a></li>
             <li><a href="contacts.html">Contacts</a></li>
-        </ul>
+      </ul>
     </nav>
-
-    <header>
-        <a href="index.html">
-            <h1>Consumed</h1>
-        </a>
-    </header>
-
     <h1 class="header">05. Steps in the Ballroom</h1>    
 
     <!-- Image with effect -->
@@ -77,8 +81,8 @@
 
     <!-- Button Container with Back and Forward Buttons -->
     <div class="btn-container">
-        <a href="tapestry4.html" class="btn">Back</a>
-        <a href="tapestry1.html" class="btn">Forward</a>
+        <a href="tapestry4.html" class="btn">Next</a>
+        <a href="tapestry1.html" class="btn">Previous</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
