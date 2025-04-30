@@ -153,7 +153,7 @@ img {
 .btn {
     display: inline-block;
     background-color: #fac9c3;
-    color: #a8200d !important; /* Fixed color contrast issue */
+    color: #f5eed3 !important;
     padding: 15px 30px;
     font-size: 1.1rem;
     font-weight: normal;
@@ -166,8 +166,7 @@ img {
 /* Hover Effect */
 .btn:hover {
     background-color: #85180b;
-    color: #f5eed3 !important;
-    transform: scale(1.1);
+    transform: scale(1.1, 1.1);
 }
 
 /* Active State */
@@ -175,6 +174,7 @@ img {
     background-color: #750d07;
     transform: translateY(0);
 }
+
 
 .prev { left: 10px; }
 .next { right: 10px; }
