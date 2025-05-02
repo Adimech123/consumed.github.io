@@ -328,25 +328,6 @@ section p {
     resize: vertical;
 }
 
-/* Button Styling */
-.submit-btn {
-    display: inline-block;
-    background-color: #fac9c3;
-    color: #f5eed3 !important;
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    font-weight: normal;
-    text-decoration: none;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* Hover Effect */
-.btn:hover {
-    background-color: #85180b;
-    transform: scale(1.1, 1.1);
-}
 
 /* Active State */
 .btn:active {
