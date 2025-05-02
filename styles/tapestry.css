@@ -8,8 +8,8 @@
 }
 
 body {
-    background-image: url('../assets/patterns/noisy.png');
-    background-color: #a8200d;
+    background-image: url('https://www.transparenttextures.com/patterns/noisy.png');
+    background-color: #A8200D; 
     background-size: contain;
     background-position: center -10%;
     font-family: 'Manjari', sans-serif;
