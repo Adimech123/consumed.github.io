@@ -25,6 +25,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
+    color: #f5eed3;
 }
 
 header a {
